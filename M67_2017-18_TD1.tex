@@ -3,7 +3,7 @@
 
 \begin{document}
 
-\hautdepage{TD1: Titre du td}
+\hautdepage{TD1: Géométrie plane}
 
 % ==================================
 \section{Le plan euclidien}
@@ -43,6 +43,7 @@
     avec égalité si et seulement si $B \in [AC]$.
     \item Retrouver cette inégalité (et le cas d'égalité) en rappelant que $d(A,B)^{2}=\vv{AB}\cdot\vv{AB}$.
     \item Étudier l'intersection des deux cercles $\ens{C}(A_1,r_1)$ et $\ens{C}(A_2,r_2)$.
+    \item Sous quelle condition sur les réels $a$, $b$, $c$ existe-t-il un triangle dont les côtés ont pour longueurs $a$, $b$ et $c$? Comment se simplifie cette condition si $a \leqslant b$? et si $a \leqslant b \leqslant c$?
   \end{enumerate}
 \end{exo}
 
@@ -86,7 +87,7 @@
 
   Un point \emph{constructible} est un point constructible à partir de $O=(0,0)$ et $I=(1,0)$.
 
-  Enfin, un nombre réel $x$ est un \emph{nombre constructible} si le point $(x,0)$ est constructible. Plus généralement, un nombre complexe $z=x+iy$ avec $x,y \in \R$ est constructible si le point $(x,y)$ est constructible. En utilisant l'identification habituelle entre $\C$ et $\R^2$,  cela revient à dire que le point d'affixe $z$ est constructible.
+  Enfin, un nombre réel $x$ est un \emph{nombre constructible} si le point $(x,0)$ est constructible.
 \end{convention}
 
 
@@ -130,7 +131,7 @@
     \item Construire à la règle et au compas un triangle équilatéral, un carré, un hexagone régulier, un octogone régulier.
     \item Construire un pentagone régulier.\\
     \begin{indication}
-      On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en décomposant $X^4+X^3+X^2+X+1$ en produit d'irréductibles dans $\R[X]$.
+      On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en commençant par remarquer que $0=1+e^{\frac{2i\pi}{5}}+e^{\frac{4i\pi}{5}}+e^{\frac{6i\pi}{5}}+e^{\frac{8i\pi}{5}}=1+2\cos \frac{2\pi}{5}+2\cos \frac{2\pi}{5}$.
     \end{indication}
   \end{enumerate}
 \end{exo}
@@ -175,7 +176,7 @@
   \begin{enumerate}
     \item Soient $K \subset L$ deux corps (on dit que $L$ est une \emph{extension} de $K$). Constater que $L$ est un espace vectoriel sur $K$. On note souvent $[L:K]$ la dimension de $L$ comme espace vectoriel sur $K$, appelée \emph{degré de l'extension $L/K$}. Montrer que si $K \subset L \subset M$ est une tour d'extensions de degrés finis, alors $[M:K]=[M:L][L:K]$.
     \item Soient $L/K$ une extension de degré $[L:K]$ fini et $x \in L$. Montrer que $x$ est racine d'un polynôme $X^d+a_1 X^{d-1} + \cdots + a_d$ à coefficients dans $K$ (on dit que $x$ est \emph{algébrique} sur $K$), puis qu'il existe un unique polynôme à coefficients dans $K$ unitaire de degré minimal annulant $x$ (appelé \textit{polynôme minimal}). Montrer que le degré de ce polynôme minimal (appelé \emph{degré} de $x$ sur $K$) divise $[L:K]$.
-    \item En déduire, en utilisant \ref{caracterisation}, que si $x$ est un réel constructible, alors le degré de $x$ sur $\Q$ est une puissance de $2$.
+    \item En déduire, en utilisant l'exercice \ref{caracterisation}, que si $x$ est un réel constructible, alors le degré de $x$ sur $\Q$ est une puissance de $2$.
   \end{enumerate}
 \end{exo}
 
@@ -206,10 +207,8 @@
     \item (\emph{Construction des polygones réguliers}) Construire le polygone régulier à $n$ côtés.
     \begin{enumerate}
       \item Montrer que construire l'heptagone régulier revient à construire $\cos\frac{2i\pi}{7}$.
-      \item Notons $\zeta_7=e^{\frac{2i\pi}{7}}$. Montrer que $\zeta_7$ est racine du polynôme $X^6+X^5+X^4+X^3+X^2+X+1$.
-      \item Montrer que, si $K$ est un sous-corps de $\R$ contenant $\cos\frac{2i\pi}{7}$, alors $\zeta_7$ appartient à $K(i\sqrt{d})$ pour un certain $d \in K$.
-      \item En déduire que si $\cos\frac{2i\pi}{7}$ est constructible, alors $\zeta_7$ est de degré $2$ sur $\Q$. Conclure.
-      %C'est dur: deja il y a une petite subtilite de redaction, on obtient d'abord que l'ordre de $\zeta_7$ divise 2, et ce n'est pas 1 car $\zeta_7$ n'est pas rationnel. Ensuite, on peut dire que le polynome minimal de $\zeta_7$ etant de degre 2, c'est $(X-\zeta_7)(X-\overline{\zeta_7})$, d'ou cos 2pi/7 rationnel.
+      \item Montrer que $1+2\cos{2\pi}{7}+2\cos{4\pi}{7}+2\cos{6\pi}{7}=0$ (considérer $\sum_{k=0}^6 e^{\frac{2ik\pi}{7}}$). En déduire que $\cos \frac{2i\pi}{7}$ est racine du polynôme $P(X)=8X^3+4X^2-4X-1$.
+      \item Montrer que $P$ n'a pas de racine dans $\Q$. En déduire que l'heptagone régulier n'est pas constructible à la règle et au compas.
     \end{enumerate}
   \end{enumerate}
 \end{exo}
