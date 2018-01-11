@@ -61,8 +61,6 @@ TeXAux/
 *.lnk
 *.zip
 *.sublime*
-*.pdf
-!/docs
 
 Administratif
 Documents
