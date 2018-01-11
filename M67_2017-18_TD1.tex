@@ -55,26 +55,8 @@
     BA^2=BH \cdot BC,\ \ CA^2=CH \cdot CB,\ \ AH^2=BH \cdot CH.
   \]
   \begin{indication}
-    On pourra utiliser la trigonométrie vue au collège.
+    On pourra utiliser la trigonométrie vue au collège, ou les triangles semblables.
   \end{indication}
-\end{exo}
-
-
-%-----------------------------------
-\begin{exo} (Tout triangle est isocèle)
-
-  On donne ici un argument pour établir que tout triangle est isocèle (dû à W.W. Rouse Ball).
-  Soit $\tri ABC$ un triangle quelconque. Soit $D$ le point d'intersection de la bissectrice de l'angle $\widehat{BAC}$ avec la médiatrice du côté opposé $[BC]$. Soient $E,F$ et $G$ les projetés orthogonaux de $D$ sur $[BC]$,$[AB]$ et $[AC]$.\\[-.7\baselineskip]
-  \sidebyside{.70}{
-    \begin{enumerate}
-      \item Montrer que $DF=DG$ et $AF=AG$.
-      \item Montrer que $DB=DC$, puis que $FB=GC$.
-      \item En déduire que $ABC$ est isocèle, puis qu'il est équilatéral.
-      \item Comment expliquer cela?
-    \end{enumerate}
-  }{
-    \includegraphics[width=35mm]{M67_2017-18_TD1_img1}
-  }
 \end{exo}
 
 
@@ -121,7 +103,10 @@
     \item le partage d'un segment en $n$ segments de même longueur,
     \item la bissectrice d'un angle $\widehat{BAC}$,
     \item le centre d'un cercle donné,
-    \item le cercle de centre $A$ et de rayon $BC$ (ainsi on peut ajouter dans la définition de point constructible les cercles centrés en un point déjà construit et de rayon égal à la distance entre deux points déjà construit, ce qui revient à reporter l'écartement du compas).
+    \item le cercle de centre $A$ et de rayon $BC$.
+    \begin{convention}
+      Ainsi on peut ajouter dans la définition de point constructible les cercles centrés en un point déjà construit et de rayon égal à la distance entre deux points déjà construit, ce qui revient à reporter l'écartement du compas.
+    \end{convention}
   \end{enumerate}
 \end{exo}
 
@@ -130,10 +115,10 @@
 \begin{exo}  (Comment dépasser les bords de la feuille)
 
   Soient $\Delta$ et $\Delta'$ deux droites qui se coupent en un point $O$ situé en dehors de la feuille.
-  \begin{itemize}
+  \begin{enumerate}
     \item Soit $A$ un point situé sur la feuille. Tracer la droite $(OA)$.
     \item Tracer la bissectrice de l'angle formé par les deux droites (plus précisement de l'angle saillant formé par les demi-droites de la feuille).
-  \end{itemize}
+  \end{enumerate}
 
 \end{exo}
 
@@ -141,13 +126,13 @@
 %-----------------------------------
 \begin{exo}  (Polygones réguliers)
 
-  \begin{itemize}
+  \begin{enumerate}
     \item Construire à la règle et au compas un triangle équilatéral, un carré, un hexagone régulier, un octogone régulier.
-    \item Construire un pentagone régulier.
+    \item Construire un pentagone régulier.\\
     \begin{indication}
       On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en décomposant $X^4+X^3+X^2+X+1$ en produit d'irréductibles dans $\R[X]$.
     \end{indication}
-  \end{itemize}
+  \end{enumerate}
 \end{exo}
 
 
@@ -157,7 +142,7 @@
   \begin{enumerate}
     \item Montrer qu'un point $(x,y)$ est constructible si et seulement si ses deux coordonnées $x$ et $y$ le sont.
     \item Montrer que tout point de $\Z^2$ est constructible.
-    \item Montrer que $\sqrt{2}$ et $\sqrt{3}$ sont constructibles.
+    \item Montrer que $\sqrt{2}$ et $\sqrt{3}$ sont constructibles. Puis montrer que $\sqrt{n}$ pour $n \in \N$ est constructible.
     \item Montrer que tout rationnel est constructible.
   \end{enumerate}
 \end{exo}
@@ -168,7 +153,7 @@
 
   Soit $\ens K$ l'ensemble  des nombres réels constructibles.
   \begin{enumerate}
-    \item Montrer que $\ens K$ est un corps.
+    \item Montrer que $\ens K$ est un sous-corps non trivial de $\R$.
     \item Montrer que la racine carrée $\sqrt{x}$ d'un réel $>0$ constructible est encore constructible.
   \end{enumerate}
 \end{exo}
@@ -178,7 +163,7 @@
 \begin{exo} \label{caracterisation} (Une caractérisation des nombres constructibles)
 
   \begin{enumerate}
-    \item Soit $K$ un sous-corps de $\R$ et $d \in K$ un nombre $>0$. Montrer que l'ensemble $K(\sqrt{d})$ défini par $K(\sqrt{d})=\{a+b\sqrt{d}, a, b \in K\}$ est un sous-corps de $\R$ qui contient $K$ et $\sqrt{d}$. C'est le plus petit sous-corps de $\R$ contenant $K$ et $\sqrt{d}$.
+    \item Soit $K$ un sous-corps de $\R$ et $d \in K$ un nombre strictement positif. Montrer que l'ensemble $K(\sqrt{d})$, défini par $K(\sqrt{d})=\{a+b\sqrt{d}, a, b \in K\}$, est un sous-corps de $\R$ qui contient $K$ et $\sqrt{d}$. C'est le plus petit sous-corps de $\R$ contenant $K$ et $\sqrt{d}$.
     \item Soit $M=(x,y)$ un point constructible en un pas à partir d'un ensemble $S=\{M_1,\ldots,M_n\}$. Soit $K$ un corps contenant les coordonnées des points $M_1,\ldots,M_n$. Alors il existe $d \in K$, $d>0$ tel que $x,y \in K(\sqrt{d})$.
     \item Montrer qu'un nombre réel $x$ est constructible si et seulement si il existe une suite $\Q=K_0 \subset K_1 \subset \cdots \subset K_n$ de sous-corps de $\R$ tels que pour tout $i=1,2,\ldots,n$ il existe $d_i \in K_{i-1}$ tel que $K_i=K_{i-1}(\sqrt{d_i})$ et $x \in K_n$.
   \end{enumerate}
@@ -205,7 +190,7 @@
     \item (\emph{Quadrature du cercle}) Construire un carré de même aire qu'un disque donné.
     \begin{enumerate}
       \item Montrer que cela revient à construire le nombre $\sqrt{\pi}$.
-      \item Le théorème de Lindemann assure que $\sqrt{\pi}$ est \emph{transcendant}, c.-à-d. non algébrique. En déduire que la quadrature du cercle est impossible.
+      \item Le théorème de Lindemann assure que $\pi$ est \emph{transcendant}, c.-à-d. non algébrique. En déduire que la quadrature du cercle est impossible.
     \end{enumerate}
     \item (\emph{Duplication du cube}) Partant d'un cube de volume donné, construire un cube de volume double.
     \begin{enumerate}
