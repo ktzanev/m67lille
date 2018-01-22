@@ -34,14 +34,14 @@
 %-----------------------------------
 \begin{exo} (Inégalité triangulaire)
 
-  Soient $A,B,C$ trois points du plan deux à deux distincts.
+  Soient $A,B,C$ trois points du plan.
   \begin{enumerate}
     \item Montrer que si $A$, $B$ et $C$ sont alignés dans cet ordre (c.-à-d. si $B \in [AC]$) alors $d(A,B)+d(B,C)=d(A,C)$.
-    \item En considérant le projeté orthogonal de $B$ sur $(AC)$, montrer que
+    \item Pour $A \neq C$, en considérant le projeté orthogonal de $B$ sur $(AC)$, montrer que
     \[
       d(A,C) \leqslant d(A,B)+d(B,C),
     \]
-    avec égalité si et seulement si $B \in [AC]$.
+    avec égalité si et seulement si $B \in [AC]$. Et si $A=C$ ?
     \item Retrouver cette inégalité (et le cas d'égalité) en rappelant que $d(A,B)^{2}=\vv{AB}\cdot\vv{AB}$.
     \item Étudier l'intersection des deux cercles $\ens{C}(A_1,r_1)$ et $\ens{C}(A_2,r_2)$.
     \item Sous quelle condition sur les réels $a$, $b$, $c$ existe-t-il un triangle dont les côtés ont pour longueurs $a$, $b$ et $c$? Comment se simplifie cette condition si $a \leqslant b$? et si $a \leqslant b \leqslant c$?
@@ -84,10 +84,8 @@
     \item ou de deux cercles distincts centrés en des points de $S$ et passant par des points de $S$.
   \end{itemize}
 
-  Un point $M$ est dit \emph{constructible à partir de $S$} s'il est constructible en un nombre fini de pas, c'est à dire s'il existe $M_1,M_2,\ldots,M_{r-1},M_r=M$ tels que $M_{i+1}$ est constructible en un pas à partir de $S \cup \{M_1,\ldots,M_{i}\}$ pour tout $i=1,\ldots,r-1$.
-
-  Un point \emph{constructible} est un point constructible à partir de $O=(0,0)$ et $I=(1,0)$.
-
+  Un point $M$ est dit \emph{constructible à partir de $S$} s'il est constructible en un nombre fini de pas, c'est à dire s'il existe $M_1,M_2,\ldots,M_{r-1},M_r=M$ tels que $M_{i+1}$ est constructible en un pas à partir de $S \cup \{M_1,\ldots,M_{i}\}$ pour tout $i=1,\ldots,r-1$.\\
+  Un point \emph{constructible} est un point constructible à partir de $O=(0,0)$ et $I=(1,0)$.\\
   Enfin, un nombre réel $x$ est un \emph{nombre constructible} si le point $(x,0)$ est constructible.
 \end{convention}
 
@@ -95,11 +93,15 @@
 %-----------------------------------
 \begin{exo} (Premières constructions)
 
+  % \begin{indication}
+  %   «Tracer une droite» signifie construire deux points sur cette droite, et «tracer un cercle» signifie construire son centre et un point sur le cercle en question.
+  % \end{indication}
+
   Tracer à la règle et au compas les figures suivantes:
   \begin{enumerate}
     \item le symétrique d'un point $A$ par rapport à un point $O$,
+    \item la médiatrice d'un segment $[AB]$ avec $A \neq B$,
     \item le milieu d'un segment $[AB]$,
-    \item la médiatrice d'un segment $[AB]$,
     \item la parallèle à une droite $(AB)$ passant par un point donné,
     \item la perpendiculaire à une droite $(AB)$ passant par un point donné (attention aux cas particuliers),
     \item le partage d'un segment en $n$ segments de même longueur,
@@ -132,7 +134,7 @@
     \item Construire à la règle et au compas un triangle équilatéral, un carré, un hexagone régulier, un octogone régulier.
     \item Construire un pentagone régulier.\\
     \begin{indication}
-      On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en commençant par remarquer que $0=1+e^{\frac{2i\pi}{5}}+e^{\frac{4i\pi}{5}}+e^{\frac{6i\pi}{5}}+e^{\frac{8i\pi}{5}}=1+2\cos \frac{2\pi}{5}+2\cos \frac{2\pi}{5}$.
+      On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en commençant par remarquer que $0=1+e^{\frac{2i\pi}{5}}+e^{\frac{4i\pi}{5}}+e^{\frac{6i\pi}{5}}+e^{\frac{8i\pi}{5}}=1+2\cos\frac{2\pi}{5}+2\cos\frac{4\pi}{5}$.
     \end{indication}
   \end{enumerate}
 \end{exo}
@@ -208,7 +210,7 @@
     \item (\emph{Construction des polygones réguliers}) Construire le polygone régulier à $n$ côtés.
     \begin{enumerate}
       \item Montrer que construire l'heptagone régulier revient à construire $\cos\frac{2i\pi}{7}$.
-      \item Montrer que $1+2\cos{2\pi}{7}+2\cos{4\pi}{7}+2\cos{6\pi}{7}=0$ (considérer $\sum_{k=0}^6 e^{\frac{2ik\pi}{7}}$). En déduire que $\cos \frac{2i\pi}{7}$ est racine du polynôme $P(X)=8X^3+4X^2-4X-1$.
+      \item Montrer que $1+2\cos\frac{2\pi}{7}+2\cos\frac{4\pi}{7}+2\cos\frac{6\pi}{7}=0$ (considérer $\sum_{k=0}^6 e^{\frac{2ik\pi}{7}}$). En déduire que $\cos\frac{2i\pi}{7}$ est racine du polynôme $P(X)=8X^3+4X^2-4X-1$.
       \item Montrer que $P$ n'a pas de racine dans $\Q$. En déduire que l'heptagone régulier n'est pas constructible à la règle et au compas.
     \end{enumerate}
   \end{enumerate}
