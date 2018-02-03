@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt,reqno]{amsart}
+\usepackage{M67tds}
+
+\begin{document}
+
+\hautdepage{TD2: Géométrie plane}
+
+On se place dans le plan $\ens{P}=\R^2$.
+
+% ==================================
+\section{Axiomatique}
+% ==================================
+
+On rappelle les propriétés (ou axiomes) d'incidence et d'ordre:
+\begin{description}
+ \item[(I1)] par deux points distincts passe une unique droite,
+ \item[(I2)] toute droite contient au moins deux points distincts,
+ \item[(I3)] il existe trois points non alignés,
+ \item [(O1)] si $C$ est entre $A$ et $B$, alors $A$, $B$ et $C$ sont alignés, deux à deux distincts et $C$ est aussi entre $B$ et $A$,
+ \item[(O2)] pour tous points distincts $A$ et $B$ il existe un point $C$ tel que $B$ soit entre $A$ et $C$,
+ \item[(O3)] parmi trois points alignés deux à deux distincts, un et un seul d'entre eux est entre les deux autres,
+ \item[(O4)] soient $A$, $B$, et $C$ trois points non alignés et $\ens{D}$ une droite ne passant par aucun d'eux. Si $\ens{D}$ passe par un point $D$ entre $A$ et $B$, alors $\ens{D}$ passe ou bien par un point entre $A$ et $C$, ou bien par un point entre $B$ et $C$, mais pas les deux à la fois.
+\end{description}
+
+
+
+\begin{exo}
+Trouver un ensemble fini possédant une géométrie vérifiant les trois propriétés d'incidence (i.e. un ensemble muni de sous-ensembles appelés \emph{droites} vérifiant les propriétés d'incidence).
+\end{exo}
+
+\begin{exo}
+ En utilisant seulement les propriétés d'incidence et d'ordre, montrer que
+ \begin{itemize}
+  \item toute droite possède une infinité de points,
+  \item entre deux points distincts $A$ et $B$ il existe toujours un point $C$.
+ \end{itemize}
+\end{exo}
+
+\begin{exo}[\textbf{Extrémités d'un segment, origine d'une demi-droite}]\
+\begin{enumerate}
+ \item Soient $A$ et $B$ deux points du plan. On rappelle que le segment $[AB]$ est défini comme l'ensemble contenant $A$, $B$ et tous les points entre $A$ et $B$.
+   \begin{enumerate}
+    \item Montrer qu'il n'existe aucuns points $C$ et $D$ appartenant à $[AB]$ tels que $A$ soit entre $C$ et $D$.
+    \item En déduire que les points $A$ et $B$ sont déterminés par le segment $[AB]$.
+   \end{enumerate}
+ \item Montrer que l'origine $A$ d'une demi-droite $[AB)$ est déterminée par la demi-droite (la demi-droite $[AB)$ étant définie comme l'union de $A$ et de l'ensemble des points $M \in (AB)$ tels que $A \notin [MB]$).
+\end{enumerate}
+\end{exo}
+
+\begin{exo}[\textbf{Propriétés de congruences pour les segments}]
+On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On note alors $[AB]\simeq[CD]$ (ou $AB \simeq CD$).
+\begin{description}
+ \item[(C1)] pour tout segment $[AB]$ et toute demi-droite $[CD)$, il existe un unique point $E$ sur $[CD)$ tel que $[CE]\simeq[AB]$,
+ \item[(C2)] si $[AB]\simeq[CD]$ et $[AB]\simeq[EF]$, alors $[CD]\simeq[EF]$; tout segment est congruent avec lui-même,
+ \item[(C3)] soient $A$, $B$ et $C$ trois points alignés dans cet ordre et $D$, $E$ et $F$ trois autres points alignés dans cet ordre tels que $[AB]\simeq [DE]$ et $[BC]\simeq[EF]$. Alors $[AC]\simeq[DF]$.
+\end{description}
+
+\end{exo}
+
+\begin{exo}[\textbf{Égalité des angles opposés}]
+Montrer que les angles opposés déterminés par deux droites sécantes sont égaux.
+
+\end{exo}
+
+
+
+% ==================================
+\section{Triplets pythagoriciens}
+% ==================================
+
+\begin{exo}[\textbf{Paramétrisation rationnelle du cercle}]\label{cerclerat} Soit $\ens{C}$ le cercle unité dans $\ens{P}=\R^2$, i.e. le cercle de centre $O=(0,0)$ et de rayon $1$. Soient $P$ le point $(-1,0)$ et $\ens{D}$ la droite d'équation $x=0$.
+ \begin{enumerate}
+  \item Montrer que pour tout point $M \in \ens{D}$ la droite $(PM)$ recoupe $\ens{C}$ en exactement un point.
+  \item Montrer que l'application qui envoie $M$ sur le point $Q$ tel que $(PM) \cap \ens{C} =\{P,Q\}$ établit une bijection de $\ens{D}$ sur $\ens{C}^\ast=\ens{C} \setminus \{P\}$.
+  \item En déduire que $\displaystyle{\rho \colon t \longmapsto \left( \frac{1-t^2}{1+t^2}, \frac{2t}{1+t^2}\right)}$ établit une bijection de $\R$ sur $\ens{C}^\ast$. En donner la réciproque.
+ \end{enumerate}
+On dit que $\rho$ est une \emph{paramétrisation rationnelle} du cercle $\ens{C}$: c'est une application qui atteint presque tous les points du cercle et dont les coordonnées sont des fractions rationnelles en la variable $t$.
+ \begin{enumerate}
+ \setcounter{enumi}3
+  \item Montrer que $\rho(t) \in \Q^2$ si et seulement si $t \in \Q$.
+  \item Soit $Q$ un point de $\ens{C}$ distinct de $P$. Quelles sont les coordonnées du point d'intersection de la droite $(PQ)$ et de la droite d'équation $x=1$?
+  \item En utilisant la paramétrisation habituelle du cercle $\theta \in \R \mapsto (\cos \theta,\sin \theta)$, retrouver l'expression de $\rho$ (on pourra interpréter $t$ comme une certaine ligne trigonométrique reconna\^itre une formule connue).
+ \end{enumerate}
+
+\end{exo}
+
+\begin{exo}[\textbf{Triplets pythagoriciens}] On cherche tous les triangles rectangles dont les côtés sont de longueur entière.
+ \begin{enumerate}
+  \item Montrer que cela revient à résoudre dans $\Z^3$ l'équation $a^2+b^2=c^2$.
+  \item Soit $(a,b,c)$ une solution non nulle. Montrer en utilisant l'exercice \ref{cerclerat} qu'il  existe $t \in \Q$ tel que $\frac{a}{c}= \frac{1-t^2}{1+t^2}$ et $\frac{b}{c}= \frac{2t}{1+t^2}$.
+  \item En déduire qu'un triangle rectangle a tous ses côtés de longueur entière si et seulement si ses côtés sont de longueurs $2kuv$, $k(v^2-u^2)$ et $k(v^2+u^2)$ pour trois entiers non nuls $u$, $v$ et $k$ avec $v>u$.
+ \end{enumerate}
+
+\end{exo}
+
+% ==================================
+\section{Isométries du plan}
+% ==================================
+
+Une isométrie du plan est une application $f \colon \ens{P} \to \ens{P}$ telle que $f(A)f(B)=AB$ pour tous points $A$ et $B$.
+
+\begin{exo}[\textbf{Propriétés des isométries}] \
+ \begin{enumerate}
+  \item Montrer qu'une isométrie est injective.
+  \item Montrer qu'une isométrie $f$ conserve l'alignement et l'ordre sur les droites (plus précisément, les points $A$, $B$ et $C$ sont alignés dans cet ordre si et seulement si leurs images $f(A)$, $f(B)$ et $f(C)$ le sont).
+  \item Montrer qu'une isométrie est surjective. En déduire que les isométries forment un groupe.
+\\ Indication: montrer que si deux points distincts $A'$ et $B'$ sont dans l'image d'une isométrie $f$, alors toute la droite $(A'B')$ est contenue dans l'image de $f$.
+  \item Montrer qu'une isométrie conserve le parallélisme et l'orthogonalité des droites.
+ \end{enumerate}
+\end{exo}
+
+\begin{exo}[\textbf{Générateurs du groupe des isométries}] On montre ici que le groupe des isométries du plan est engendré par les réflexions. Plus précisément, toute isométrie s'écrit comme produit d'au plus trois réflexions.
+ \begin{enumerate}
+  \item Montrer qu'une isométrie fixant trois points non alignés est égale à l'identité.
+  \item Montrer qu'une isométrie fixant deux points distincts est l'identité ou une réflexion dont on précisera l'axe.
+  \item Montrer qu'une isométrie fixant un point s'écrit comme produit d'au plus deux réflexions.
+  \item Conclure.
+  \item Montrer qu'une réflexion ne peut pas s'écrire comme produit de deux réflexions.
+  \item Soient $\sigma_1$, $\sigma_2$ et $\sigma_3$ trois réflexions d'axes $\ens{D}_1$, $\ens{D}_2$ et $\ens{D}_3$. Montrer que, si les droites $\ens{D}_i$ sont concourantes ou parallèles, alors le produit $\sigma_1 \sigma_2 \sigma_3$ est une réflexion.
+  \item Montrer qu'un produit d'un nombre pair de réflexions peut s'écrire comme produit de deux réflexions.
+  \item Montrer que la parité du nombre de réflexions dans une décomposition en produit de réflexions d'une isométrie donnée ne dépend pas de la décomposition considérée.
+ \end{enumerate}
+Cette remarque permet de définir déplacements et anti-déplacements sans avoir recours au déterminant de la partie linéaire des isométries.
+\end{exo}
+
+\begin{exo}[\textbf{Classification des isométries planes}]
+On détermine maintenant la nature des isométries du plan, en utilisant que toute isométrie est produit d'au plus trois réflexions.
+ \begin{enumerate}
+  \item Déterminer les points fixes d'un produit de deux réflexions. Montrer qu'un tel produit est ou bien une translation, ou bien une rotation. Préciser les caractéristiques de ces transformations en fonction des axes des réflexions.
+  \item Montrer qu'un produit de trois réflexions est ou bien une réflexion, ou bien une \emph{symétrie glissée}, c.-à-d. le produit d'une réflexion d'axe $\ens{D}$ et d'une translation non triviale dirigée suivant $\ens{D}$.
+  \item Dresser la liste des types d'isométries planes, en précisant les points fixes de chacunes d'elles.
+  \item Retrouver ce résultat en montrant d'abord qu'il  existe pour toute isométrie $f$ une translation $t$ et une rotation $r$ telles que $r \circ t \circ f$ soit l'identité ou une réflexion.
+ \end{enumerate}
+
+\end{exo}
+
+
+\end{document}
