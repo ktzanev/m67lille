@@ -23,19 +23,13 @@ On rappelle les propriétés (ou axiomes) d'incidence et d'ordre:
   \item[I1] par deux points distincts passe une unique droite,
   \item[I2] toute droite contient au moins deux points distincts,
   \item[I3] il existe trois points non alignés,
-  \item [O1] si $C$ est entre $A$ et $B$, alors $A$, $B$ et $C$ sont alignés, deux à deux distincts et $C$ est aussi entre $B$ et $A$,
+  \item[O1] si $C$ est entre $A$ et $B$, alors $A$, $B$ et $C$ sont alignés, deux à deux distincts et $C$ est aussi entre $B$ et $A$,
   \item[O2] pour tous points distincts $A$ et $B$ il existe un point $C$ tel que $B$ soit entre $A$ et $C$,
   \item[O3] parmi trois points alignés deux à deux distincts, un et un seul d'entre eux est entre les deux autres,
   \item[O4] soient $A$, $B$, et $C$ trois points non alignés et $\ens{D}$ une droite ne passant par aucun d'eux. Si $\ens{D}$ passe par un point $D$ entre $A$ et $B$, alors $\ens{D}$ passe ou bien par un point entre $A$ et $C$, ou bien par un point entre $B$ et $C$, mais pas les deux à la fois.
 \end{axioms}
 
 
-
-%-----------------------------------
-\begin{exo}
-
-  Trouver un ensemble fini possédant une géométrie vérifiant les trois propriétés d'incidence (c.-à-d. un ensemble muni de sous-ensembles appelés \emph{droites} vérifiant les propriétés d'incidence).
-\end{exo}
 
 %-----------------------------------
 \begin{exo}
@@ -48,13 +42,20 @@ On rappelle les propriétés (ou axiomes) d'incidence et d'ordre:
 \end{exo}
 
 %-----------------------------------
+\begin{exo}
+
+  Trouver un ensemble fini possédant une géométrie vérifiant les trois propriétés d'incidence \textbf{(I1-3)}, c.-à-d. un ensemble muni de sous-ensembles appelés \emph{droites} vérifiant les propriétés d'incidence.\\
+  Existe-t-il un ensemble fini possédant une géométrie vérifiant les sept propriétés \textbf{I1-O4} ?
+\end{exo}
+
+%-----------------------------------
 \begin{exo} (Extrémités d'un segment, origine d'une demi-droite)
 
   \begin{enumerate}
     \item Soient $A$ et $B$ deux points du plan. On rappelle que le segment $[AB]$ est défini comme l'ensemble contenant $A$, $B$ et tous les points entre $A$ et $B$.
     \begin{enumerate}
       \item Montrer qu'il n'existe aucuns points $C$ et $D$ appartenant à $[AB]$ tels que $A$ soit entre $C$ et $D$.
-      \item En déduire que les points $A$ et $B$ sont déterminés par le segment $[AB]$.
+      \item En déduire que le couple non ordonné $\{A,B\}$ est déterminé par le segment $[AB]$.
     \end{enumerate}
     \item Montrer que l'origine $A$ d'une demi-droite $[AB)$ est déterminée par la demi-droite (la demi-droite $[AB)$ étant définie comme l'union de $A$ et de l'ensemble des points $M \in (AB)$ tels que $A \notin [MB]$).
   \end{enumerate}
@@ -63,7 +64,7 @@ On rappelle les propriétés (ou axiomes) d'incidence et d'ordre:
 %-----------------------------------
 \begin{exo} (Propriétés de congruences pour les segments)
 
-On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On note alors $[AB]\simeq[CD]$ (ou $AB \simeq CD$).
+On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On note alors $[AB]\simeq[CD]$ (ou $AB \simeq CD$). Vérifier que nous avons les propriétés (de congruence) suivantes:
   \begin{axioms}[leftmargin=2.8em]
     \item[C1] pour tout segment $[AB]$ et toute demi-droite $[CD)$, il existe un unique point $E$ sur $[CD)$ tel que $[CE]\simeq[AB]$,
     \item[C2] si $[AB]\simeq[CD]$ et $[AB]\simeq[EF]$, alors $[CD]\simeq[EF]$; tout segment est congruent avec lui-même,
@@ -149,7 +150,7 @@ On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On 
     \item Montrer qu'un produit d'un nombre pair de réflexions peut s'écrire comme produit de deux réflexions.
     \item Montrer que la parité du nombre de réflexions dans une décomposition en produit de réflexions d'une isométrie donnée ne dépend pas de la décomposition considérée.
   \end{enumerate}
-  Cette remarque permet de définir déplacements et anti-déplacements sans avoir recours au déterminant de la partie linéaire des isométries.
+  Cette remarque permet de définir déplacements et antidéplacements sans avoir recours au déterminant de la partie linéaire des isométries.
 \end{exo}
 
 %-----------------------------------
@@ -163,6 +164,35 @@ On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On 
     \item Retrouver ce résultat en montrant d'abord qu'il  existe pour toute isométrie $f$ une translation $t$ et une rotation $r$ telles que $r \circ t \circ f$ soit l'identité ou une réflexion.
   \end{enumerate}
 \end{exo}
+
+%-----------------------------------
+\begin{exo} (Capes 2007, 2\ieme{} épreuve)
+
+  \begin{center}
+    \textbf{Partie V. GROUPES DIÉDRAUX}
+  \end{center}
+  \begin{enumerate}[\textbf{1)}]
+    \item Soit $E$ un plan affine euclidien orienté. Soit $p \in \mathbb{N}$, $p \geq 2$. On appelle groupe diédral d'ordre $2p$, noté $D_{2p}$, le groupe des isométries laissant invariant un polygone régulier
+    \[
+      \mathcal{P}_{p}=\left\{M_{0},\ldots,M_{p-1}\right\}
+    \]
+    à $p$ sommets, parcourus dans le sens direct. On pose $M_{p}=M_{0}$.
+    \begin{enumerate}[a)]
+      \item Montrer que le sous-groupe $C_{p}$ de $D_{p}$ constitué des isométries directes est un groupe cyclique d'ordre $p$ engendré par la rotation $\rho$ de centre $O$ et d'angle $\frac{2 \pi}{p}$, où $O$ est le centre du polygone $\mathcal{P}_{p}$.
+      \item Préciser une symétrie orthogonale $\sigma$ laissant le polygone $\mathcal{P}_{p}$ invariant.
+      \item Montrer que
+      \[
+        D_{2p} =
+        \left\{
+          \rho^{i}\circ \sigma^{j} \,;\, i \in \{1,\ldots,p-1\} \text{ et } j \in \{0,1\}
+        \right\}
+      \]
+      et en déduire que $D_{2p}$ est un groupe d'ordre $2p$.
+      \item Soit $k \in \{1,\ldots,p-1\}$. Montrer que $\sigma \circ \rho^{k} \circ \sigma = \rho^{p-k}$.
+    \end{enumerate}
+  \end{enumerate}
+\end{exo}
+
 
 
 \end{document}
