@@ -12,7 +12,7 @@
 \begin{convention}
   Le plan cartésien $\R^2$ est noté $\ens{P}$. Il est muni de la distance euclidienne
   \[
-    d(A,B)=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}
+    AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}
   \]
   pour tous $A=(x_A,y_A)$, $B=(x_B,y_B)$ dans $\ens{P}$.
 \end{convention}
@@ -25,7 +25,7 @@
   \begin{enumerate}
      \item Montrer qu'il existe une unique droite perpendiculaire\footnote{Deux droites sont perpendiculaires si elles se coupent en formant un angle droit, ou encore si tout vecteur directeur de l'une est orthogonal à tout vecteur directeur de l'autre.} à $\ens{D}$ passant par $A$. On appelle \emph{projeté orthogonal} de $A$ sur $\ens{D}$ le point d'intersection de $\ens{D}$ et sa perpendiculaire passant par $A$.
      \item Exprimer les coordonnées du projeté $H$ en fonction de celles de $A$ et d'une équation de $\ens{D}$.
-     \item Montrer que $d(A,H)\leqslant d(A,M)$ pour tout $M \in \ens{D}$, avec égalité si et seulement si $M=H$.
+     \item Montrer que $AH\leqslant AM$ pour tout $M \in \ens{D}$, avec égalité si et seulement si $M=H$.
      \item Étudier l'intersection d'une droite $\ens{D}$ et d'un cercle $\ens{C}(A,r)$.
   \end{enumerate}
 \end{exo}
@@ -36,13 +36,13 @@
 
   Soient $A,B,C$ trois points du plan.
   \begin{enumerate}
-    \item Montrer que si $A$, $B$ et $C$ sont alignés dans cet ordre (c.-à-d. si $B \in [AC]$) alors $d(A,B)+d(B,C)=d(A,C)$.
+    \item Montrer que si $A$, $B$ et $C$ sont alignés dans cet ordre (c.-à-d. si $B \in [AC]$) alors $AB+BC=AC$.
     \item Pour $A \neq C$, en considérant le projeté orthogonal de $B$ sur $(AC)$, montrer que
     \[
-      d(A,C) \leqslant d(A,B)+d(B,C),
+      AC \leqslant AB+BC,
     \]
     avec égalité si et seulement si $B \in [AC]$. Et si $A=C$ ?
-    \item Retrouver cette inégalité (et le cas d'égalité) en rappelant que $d(A,B)^{2}=\vv{AB}\cdot\vv{AB}$.
+    \item Retrouver cette inégalité (et le cas d'égalité) en rappelant que $AB^{2}=\vv{AB}\cdot\vv{AB}$.
     \item Étudier l'intersection des deux cercles $\ens{C}(A_1,r_1)$ et $\ens{C}(A_2,r_2)$.
     \item Sous quelle condition sur les réels $a$, $b$, $c$ existe-t-il un triangle dont les côtés ont pour longueurs $a$, $b$ et $c$? Comment se simplifie cette condition si $a \leqslant b$? et si $a \leqslant b \leqslant c$?
   \end{enumerate}
@@ -121,7 +121,7 @@
   Soient $\Delta$ et $\Delta'$ deux droites qui se coupent en un point $O$ situé en dehors de la feuille.
   \begin{enumerate}
     \item Soit $A$ un point situé sur la feuille. Tracer la droite $(OA)$.
-    \item Tracer la bissectrice de l'angle formé par les deux droites (plus précisement de l'angle saillant formé par les demi-droites de la feuille).
+    \item Tracer la bissectrice de l'angle formé par les deux droites (plus précisément de l'angle saillant formé par les demi-droites de la feuille).
   \end{enumerate}
 
 \end{exo}
@@ -131,7 +131,7 @@
 \begin{exo}  (Polygones réguliers)
 
   \begin{enumerate}
-    \item Construire à la règle et au compas un triangle équilatéral, un carré, un hexagone régulier, un octogone régulier.
+    \item Construire à la règle et au compas un triangle équilatéral, un carré, un hexagone régulier, un octogone régulier : à partir de deux sommets voisins donnés, ou à partir du centre du cercle circonscrit et d'un sommet donnés.
     \item Construire un pentagone régulier.\\
     \begin{indication}
       On peut calculer la valeur de $\cos \frac{2\pi}{5}$ en commençant par remarquer que $0=1+e^{\frac{2i\pi}{5}}+e^{\frac{4i\pi}{5}}+e^{\frac{6i\pi}{5}}+e^{\frac{8i\pi}{5}}=1+2\cos\frac{2\pi}{5}+2\cos\frac{4\pi}{5}$.
@@ -146,6 +146,7 @@
   \begin{enumerate}
     \item Montrer qu'un point $(x,y)$ est constructible si et seulement si ses deux coordonnées $x$ et $y$ le sont.
     \item Montrer que tout point de $\Z^2$ est constructible.
+    \item Montrer que si $A$ et $B$ sont constructibles, alors la distance $AB$ est constructible.
     \item Montrer que $\sqrt{2}$ et $\sqrt{3}$ sont constructibles. Puis montrer que $\sqrt{n}$ pour $n \in \N$ est constructible.
     \item Montrer que tout rationnel est constructible.
   \end{enumerate}
@@ -177,7 +178,7 @@
 %-----------------------------------
 \begin{exo}  (Une condition nécessaire de constructibilité)
   \begin{enumerate}
-    \item Soient $K \subset L$ deux corps (on dit que $L$ est une \emph{extension} de $K$). Constater que $L$ est un espace vectoriel sur $K$. On note souvent $[L:K]$ la dimension de $L$ comme espace vectoriel sur $K$, appelée \emph{degré de l'extension $L/K$}. Montrer que si $K \subset L \subset M$ est une tour d'extensions de degrés finis, alors $[M:K]=[M:L][L:K]$.
+    \item Soient $K \subset L$ deux corps (on dit que $L$ est une \emph{extension} de $K$, et on note $L/K$). Constater que $L$ est un espace vectoriel sur $K$. On note souvent $[L:K]$ la dimension de $L$ comme espace vectoriel sur $K$, appelée \emph{degré de l'extension $L/K$}. Montrer que si $K \subset L \subset M$ est une tour d'extensions de degrés finis, alors $[M:K]=[M:L][L:K]$.
     \item Soient $L/K$ une extension de degré $[L:K]$ fini et $x \in L$. Montrer que $x$ est racine d'un polynôme $X^d+a_1 X^{d-1} + \cdots + a_d$ à coefficients dans $K$ (on dit que $x$ est \emph{algébrique} sur $K$), puis qu'il existe un unique polynôme à coefficients dans $K$ unitaire de degré minimal annulant $x$ (appelé \textit{polynôme minimal}). Montrer que le degré de ce polynôme minimal (appelé \emph{degré} de $x$ sur $K$) divise $[L:K]$.
     \item En déduire, en utilisant l'exercice \ref{caracterisation}, que si $x$ est un réel constructible, alors le degré de $x$ sur $\Q$ est une puissance de $2$.
   \end{enumerate}
@@ -203,7 +204,7 @@
     \end{enumerate}
     \item (\emph{Trisection de l'angle})  Partager un angle en trois angles égaux.
     \begin{enumerate}
-      \item Montrer que trisecter l'angle $\frac{\pi}{3}$ revient à construire $\cos(\frac{\pi}{9})$.
+      \item Montrer que «trisecter» l'angle $\frac{\pi}{3}$ revient à construire $\cos(\frac{\pi}{9})$.
       \item Montrer que $\cos 3\theta = 4 \cos^3 \theta -3 \cos \theta$. En déduire que $2 \cos \frac{\pi}{9}$ est racine du polynôme $P(X)=X^3-3X-1$.
       \item Montrer que $P$ n'a pas de racine dans $\Q$. Conclure.
     \end{enumerate}
