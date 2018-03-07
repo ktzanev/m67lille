@@ -17,5 +17,6 @@ Dans [ce dépôt](https://github.com/ktzanev/m67lille) vous pouvez trouver les s
 
 - Feuille de TD n°1 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD1.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD1.pdf)]
 - Feuille de TD n°2 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD2.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD2.pdf)]
+- Le DS1 [[tex](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS1.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS1_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS1_solutions.pdf)]
 
 Pour compiler ces feuilles de td vous avez besoin de la feuille de style [M67tds.sty](https://ktzanev.github.io/m67lille/TDs/M67tds.sty).
