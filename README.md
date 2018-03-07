@@ -1,6 +1,6 @@
 # [m67lille](https://github.com/ktzanev/m67lille)
 
-Les feuilles de TD du module M67 - «Gémétrie élémentaire» de l'Université de Lille
+Les documents du module M67 - «Gémétrie élémentaire» de l'Université de Lille
 
 ### 2017/18
 
@@ -15,7 +15,7 @@ Vous pouvez récupérer [ce dépôt](https://github.com/ktzanev/m67lille) de deu
 
 Dans [ce dépôt](https://github.com/ktzanev/m67lille) vous pouvez trouver les sources LaTeX et les PDFs (compilés avec XeLaTeX) suivants :
 
-- Feuille n°1 [[tex](https://ktzanev.github.io/m67lille/M67_2017-18_TD1.tex)] [[pdf](https://ktzanev.github.io/m67lille/M67_2017-18_TD1.pdf)]
-- Feuille n°2 [[tex](https://ktzanev.github.io/m67lille/M67_2017-18_TD2.tex)] [[pdf](https://ktzanev.github.io/m67lille/M67_2017-18_TD2.pdf)]
+- Feuille de TD n°1 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD1.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD1.pdf)]
+- Feuille de TD n°2 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD2.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD2.pdf)]
 
-Pour compiler ces feuilles de td vous avez besoin de la feuille de style [M67tds.sty](https://ktzanev.github.io/m67lille/M67tds.sty).
+Pour compiler ces feuilles de td vous avez besoin de la feuille de style [M67tds.sty](https://ktzanev.github.io/m67lille/TDs/M67tds.sty).
