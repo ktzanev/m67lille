@@ -20,6 +20,7 @@
 \setlength{\belowdisplayshortskip}{2pt plus 4pt}
 % ------------- Les standards
 \usepackage{mathtools,amssymb,bm,amsthm}
+\usepackage{yhmath} % pour le \wideparen
 \usepackage[french]{babel}
 \usepackage[babel=true]{csquotes}
 \frenchspacing
@@ -84,6 +85,15 @@
 % indication
 \newenvironment{indication}{\noindent\em Indication:}{}
 
+% Les solutions
+\usepackage{environ}
+\newif\ifsolutions\solutionsfalse % par defaut les solution sont cachées
+\newcommand{\sisolutions}[1]{\ifsolutions #1\fi}
+\newcommand{\sisujet}[1]{\ifsolutions\else #1\fi}
+\def\exosol{\tikz[overlay]{\draw[red, opacity=0.7] (-0.1,0.9) -- (-0.1,-1.6) (-0.4,0.4) -- (2.1,0.4);}}
+\NewEnviron{solution}{\ifsolutions\needspace{2\baselineskip}\hspace*{-1mm}\noindent{\exoimg\bfseries\sffamily Solution: }\BODY\par\vspace{\afterexo}\fi}
+
+
 %  -------------- Les abréviations standards
 \RequirePackage[e]{esvect} % pour les vecteurs
 \def\cP{\mathcal{P}}
@@ -102,6 +112,7 @@
 
 % ---- pour mettre des images à côté des textes
 \newcommand{\sidebyside}[3]{%
+\vspace{4pt}\par%
 \noindent%
 \begin{minipage}{#1\textwidth}
   #2
@@ -134,3 +145,10 @@
 
 % ---- pas de numéros des pages ------
 \pagestyle{empty}
+
+% ---- TSVP ------
+\newcommand{\tsvp}{\ifsolutions\else%
+\begin{tikzpicture}[remember picture,overlay]
+    \node[single arrow, fill=black!3, above left=2cm, draw=black, inner sep=3mm, scale=.7] at (current page.south east) {\textsf{ T.S.V.P.}};
+\end{tikzpicture}
+\fi}
