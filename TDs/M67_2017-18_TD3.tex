@@ -31,8 +31,12 @@
 %-----------------------------------
 \begin{exo} (Bissectrice et longueurs)
 
-  Soit $M$ le pied de la bissectrice issue de $A$ dans un triangle $ABC$ (c.-à-d. le point d'intersection de cette bissectrice et du côté opposé $[BC]$). Montrer que $\displaystyle{\frac{AB}{AC}=\frac{MB}{MC}}$.
-  % Deux arguments : le plus immediat avec les sinus, ou directement avec Thales ou il faut.
+  Soit $M$ le pied de la bissectrice issue de $A$ dans un triangle $ABC$ (c.-à-d. le point d'intersection de cette bissectrice et du côté opposé $[BC]$).
+  \begin{enumerate}
+    \item Montrer l'égalité des rapports $AB:AC=MB:MC$.
+    \item Montrer que le bissectrice $AM$ coupe le cercle circonscrit en un point $P$ qui est sur la médiatrice.
+    \item Montrer que $AM^{2} = AB \times AC - MB \times MC$
+  \end{enumerate}
 \end{exo}
 
 %-----------------------------------
@@ -54,6 +58,22 @@
   \end{enumerate}
 \end{exo}
 
+%-----------------------------------
+%-----------------------------------
+\begin{exo} (Quadrilatère inscrit)
+
+    Soit $ABCD$ un quadrilatère non croisé.
+    \begin{enumerate}
+      \item Montrer que si $ABCD$ est inscrit dans un cercle, alors $ABCD$ est convexe et ces diagonales se coupent en un point.
+      \item Montrer l'équivalence des assertions suivantes:
+      \begin{itemize}
+        \item $ABCD$ est inscrit dans un cercle.
+        \item $\widehat{ABC}+\widehat{CDA} = \pi$ (ou $\widehat{DAB}+\widehat{BCD} = \pi$).
+        \item $[AC]$ et $[BD]$ se coupent en $S$ et $AS \times SC = BS \times SD$.
+        \item $AB\times CD + BC\times DA = AC\times BD$ (c'est le \emph{théorème de Ptolémée}).
+      \end{itemize}
+    \end{enumerate}
+\end{exo}
 
 %-----------------------------------
 \begin{exo} (Cas de similitude)
@@ -154,6 +174,42 @@
   }{
     \includegraphics[width=35mm]{img_isocele_ball}
   }
+\end{exo}
+
+% ==================================
+\section{Cercles, angles et longueurs}
+% ==================================
+
+%-----------------------------------
+\begin{exo} (Puissance d'un point)
+
+  Soient $M$ un point et $\ens{C}$ un cercle. On considère une droite $\ens{D}$ passant par $P$ et qui rencontre $\ens{C}$ en deux points (pas forcement distincts) $S$ et $T$.
+  \begin{enumerate}
+    \item Montrer que la quantité $\overline{MS}\times \overline{MT}$ ne dépend pas du choix de la droite $\ens{D}$.
+  \end{enumerate}
+  \begin{convention}
+    Pour la suite on note cette quantité $P_{\ens{C}}(M)$ et on l'appelle \emph{puissance de $M$ par rapport à $\ens{C}$}.
+  \end{convention}
+  \begin{enumerate}[resume]
+    \item Étant donnée un cercle $\ens{C}$, déterminer le signe de $P_{\ens{C}}(M)$ en fonction de la position de $M$.
+    \item Montrer que l'ensemble des points à égale puissance par rapport à deux cercles données est une droite (appeler \emph{axe radical} de ces deux cercles).
+    \item Déterminer l'axe radicale dans le cas de deux cercles qui s'intersectent.
+    \item Quelle droite «connue» généralise l'axe radicale.
+    \item Étant données deux cercles, construire à la règle et compas l'axe radicale.
+  \end{enumerate}
+\end{exo}
+
+%-----------------------------------
+\begin{exo} (Angle entre deux cercles)
+
+  Soient deux cercles $\ens{C}_{1}$ et $\ens{C}_{2}$ de centre respectifs $O_{1}$ et $O_{2}$ qui se rencontre en un point $S$. On définit (la mesure de) l'angle entre $\ens{C}_{1}$ et $\ens{C}_{2}$ comme étant égale à $\widehat{O_{1}MO_{2}}$.
+  \begin{enumerate}
+    \item Quelle est l'angle entre deux cercles tangent extérieurement ?
+    \item Quelle est l'angle entre deux cercles tangent intérieurement ?
+    \item Soit un cercle $\ens{C}$ et un point $M$ extérieur à $\ens{C}$. Montrer qu'il existe un cercle de centre $M$ qui est orthogonal\footnote{Qui fait un angle de $\pi/2$ avec $\ens{C}$} à $\ens{C}$.
+    \item Étant donnés deux cercles, déterminer l'ensemble des centres des cercles orthogonaux à ces deux cercles.
+    \item Étant donnés trois cercles en position générale, montrer qu'il existe un unique cercle qui est orthogonal aux trois.
+  \end{enumerate}
 \end{exo}
 
 
