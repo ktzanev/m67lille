@@ -60,14 +60,19 @@
 % Les exercices
 \newcounter{numeroexo}
 \setcounter{numeroexo}{0}
-\def\exoimg{\tikz[overlay]{\NoAutoSpacing;\draw[magenta, opacity=0.7] (-0.1,0.4) -- (-0.1,-2.1) (-0.14,0.4) -- (-0.14,-1.4) (-0.4,-0.1) -- (2.1,-0.1);}}
+\newlength{\imgheight}\setlength{\imgheight}{7mm}
+\def\exoimg{\tikz[overlay]{\NoAutoSpacing;\draw[magenta, opacity=0.7] (-0.1,0.4) -- (-0.1,-3\imgheight) (-0.14,0.4) -- (-0.14,-2\imgheight) (-0.4,-0.1) -- (2.1,-0.1);}}
 
 \newlength{\afterexo}\setlength{\afterexo}{3mm plus 4mm}
 \newenvironment{exercice}[1]
    {\needspace{4\baselineskip}\vspace{1mm}\par\refstepcounter{numeroexo}\hspace*{-1mm}\noindent{\exoimg\bfseries\sffamily #1 \arabic{numeroexo}}}
    {\par\vspace{\afterexo}}
 
-\newenvironment{exo}{\setcounter{equation}{0}\begin{exercice}{Exercice} \normalfont}{\end{exercice}}
+\newenvironment{exo}[1][1]{
+  \setcounter{equation}{0}
+  \setlength{\imgheight}{#1\imgheight}
+  \begin{exercice}{Exercice} \normalfont}%
+  {\end{exercice}}
 
 % les questions
 \renewcommand{\theenumi}{\alph{enumi}}
