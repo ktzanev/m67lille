@@ -1,0 +1,27 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usepackage{fontspec}
+\usetikzlibrary{nicepoints} % https://github.com/kpym/tikz-nicepoints
+\usetikzlibrary{euclid.transforms} % https://github.com/kpym/tikz-euclid.transforms
+\usetikzlibrary{angles}
+\begin{document}
+  \begin{tikzpicture}
+    \def\r{14mm}
+    \draw[gray] circle(\r);
+    \draw
+      (180:\r) [point="A"left] --
+      (60:\r) [point="B"] --
+      (-60:\r) [point="C"below] -- cycle;
+    \draw[thick, blue] (20:\r) [point="M"right] -- (A) (M) -- (B) (M) -- (C);
+    \path
+      (40:1.14*\r) node[scale=.77,rotate=-50]{$2\theta$}
+      (-20:1.14*\r) node[scale=.77,rotate=-110]{$120°-2\theta$}
+      (120:1.14*\r) node[scale=.77,rotate=30]{$120°$};
+    \path[angle eccentricity=1.3, angle radius=7mm]
+      pic[draw,pic text=$\theta$]{angle=M--A--B}
+      pic[draw,pic text=$\theta$]{angle=M--C--B}
+      pic[draw,double,pic text=$60°\!-\!\theta$, pic text options={scale=.7},angle eccentricity=1.59]{angle=C--A--M}
+      pic[fill=gray, fill opacity=.1, draw, text opacity=1, pic text=$60°$, pic text options={scale=.7},angle radius=4mm]{angle=B--C--A}
+      pic[fill=gray, fill opacity=.1, draw ,angle radius=4mm]{angle=C--A--B}
+    ;
+  \end{tikzpicture}
+\end{document}
