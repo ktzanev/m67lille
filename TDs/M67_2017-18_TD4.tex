@@ -1,0 +1,135 @@
+\documentclass[a4paper,11pt,reqno]{amsart}
+\usepackage{M67tds}
+
+\DeclareMathOperator{\aire}{aire}
+
+\begin{document}
+
+\hautdepage{TD4: Géométrie de l'espace}
+
+\begin{convention}
+  On se place dans l'espace euclidien $\ens{E}$ de dimension $3$
+\end{convention}
+
+
+% ==================================
+\section{Tétraèdres}
+% ==================================
+
+%-----------------------------------
+\begin{exo}[0.7] (Construction)
+  \begin{enumerate}
+    \item Soit $ABCD$ un tétraèdre régulier. Que dire du projeté de $A$ sur le plan $(BCD)$?
+    \item Construire un tétraèdre régulier.
+  \end{enumerate}
+\end{exo}
+
+%-----------------------------------
+\begin{exo} (Groupe des isométries d'un tétraèdre régulier)
+
+ Soit $ABCD$ un tétraèdre régulier.
+  \begin{enumerate}
+    \item Vérifier que toute isométrie préservant le tétraèdre $ABCD$ préserve l'ensemble $\{A,B,C,D\}$ de ses sommets.
+    \item Construire un morphisme de groupes injectif du groupe des isométries préservant le tétraèdre dans le groupe symétrique $S_4$.
+    \item Vérifier que ce morphisme est bijectif.
+  \end{enumerate}
+\end{exo}
+
+
+%-----------------------------------
+\begin{exo}[.7]
+
+  Soit $ABCD$ un tétraèdre. Soient $M$, $N$, $P$ trois points (distincts des sommets) situés respectivement sur les arêtes $[AB]$, $[AC]$ et $[CD]$. Démontrer que le plan $(MNP)$ coupe l'arête $[BD]$ et construire le point d'intersection.
+  %Commencer par considerer le point d'intersection de $(MN)$ et $(BC)$, s'il exsite.
+\end{exo}
+
+
+% ==================================
+\section{Cubes, parallélépipèdes, sections}
+% ==================================
+
+%-----------------------------------
+\begin{exo}
+
+  On considère les triangles dont les sommets sont trois sommets d'un cube $ABCDA'B'C'D'$ donné.
+  \begin{enumerate}
+    \item Montrer qu'à isométrie près il y a trois sortes de tels triangles. Préciser leur nature, et leurs dimensions.
+    \item Combien y a-t-il de triangle de chaque sorte?
+  \end{enumerate}
+\end{exo}
+
+%-----------------------------------
+\begin{exo}[.7] (Section d'un cube)
+
+  Soient $ABCDA'B'C'D'$ un cube et trois points $M$, $N$, $P$, situés respectivement sur les arêtes $[AB]$, $[CD]$ et $[A'B']$. Construire la section du cube par le plan $(MNP)$. Combien de côtés peut avoir le polygone ainsi obtenu?
+\end{exo}
+
+%-----------------------------------
+\begin{exo}[.7] (Fourmi au plafond)
+
+  Expliquer comment trouver le plus court chemin que doit emprunter une fourmi située un plafond d'une pièce parallélépipédique pour atteindre, en suivant les murs, plafond et plancher, une miette située sur le plancher.
+\end{exo}
+
+
+%-----------------------------------
+\begin{exo} (Groupe des isométries préservant un cube)
+
+  Soit $\ens{C}$ un cube donné.
+  \begin{enumerate}
+    \item Montrer qu'une isométrie préservant le cube $\ens{C}$ préserve son centre $O$.
+    \item Déterminer le groupe des rotations préservant le cube.
+    \item Que peut-on en déduire sur le groupe des isométries préservant le cube?
+  \end{enumerate}
+\end{exo}
+
+
+% ==================================
+\section{Polyèdres}
+% ==================================
+
+%-----------------------------------
+\begin{exo} (Polyèdres réguliers)
+
+Soit $n \geqslant 3$ et soient $[Ox_1),[Ox_2),\ldots,[Ox_n)$, $n$ demi-droites deux à deux distinctes de même origine $O$ telles que, pour tout $i=1,\ldots,n$ les demi-droites épointées $[Ox_k)\setminus\{O\}$ pour $k \neq i,i+1$ sont toutes dans le même demi-espace ouvert $E_i$ délimité par le plan $(Ox_ix_{i+1})$ (en convenant que $Ox_{n+1}=Ox_1$). On appelle \emph{angle polyèdre convexe} l'intersection $\bigcap_{i=1}^n E_i$, notée $Ox_1\ldots x_n$.
+  \begin{enumerate}
+    \item Montrer que si $[Ox)$, $[Oy)$ et $[Oz)$ sont trois demi-droites de même origine non coplanaires, alors
+    \begin{enumerate}
+      \item $\widehat{xOy} < \widehat{xOz} + \widehat{zOy}$,
+      \item $\widehat{xOy} +\widehat{yOz}+\widehat{zOx} < 2\pi$.
+    \end{enumerate}
+    \item Montrer que si $Ox_1\ldots x_n$ est un angle polyèdre convexe, alors
+      $$
+        \sum_{i=1}^n \widehat{x_i O x_{i+1}} < 2 \pi
+      $$
+      (avec la convention $\widehat{x_nOx_{n+1}}=\widehat{x_nOx_1}$).
+    \item Un polyèdre convexe est \emph{régulier} si toutes ses faces sont des polygones réguliers à $p$ côtés et si en chacun de ses sommets aboutissent $q$ arêtes. Montrer que les couples $(p,q)$ possibles sont
+      $$
+        (3,3),\ (3,4),\ (4,3),\ (3,5),\ (5,3)
+      $$
+      (on pourra admettre que $q$ est supérieur ou égal à $3$).
+  \end{enumerate}
+\end{exo}
+
+
+% ==================================
+\section{Volume}
+% ==================================
+
+%-----------------------------------
+\begin{exo} (Volume du tétraèdre régulier)
+
+  \begin{enumerate}
+    \item Calculer le volume d'un tétraèdre régulier en fonction de la longueur $a$ de ses arêtes.
+    \item Retrouver ce résultat en plongeant le tétraèdre régulier dans un cube de sorte que son complémentaire dans le cube soit la réunion de quatre tétraèdres isométriques.
+  \end{enumerate}
+\end{exo}
+
+%-----------------------------------
+\begin{exo}[.7]
+
+  Calculer le volume d'une boule percée d'un trou cylindrique d'axe un diamètre de la boule et de hauteur $2a$.
+  % $4\pi a^3 / 3$
+\end{exo}
+
+
+\end{document}
