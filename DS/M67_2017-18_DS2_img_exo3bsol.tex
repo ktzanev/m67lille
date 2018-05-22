@@ -1,0 +1,16 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms}
+
+\begin{document}
+  \begin{tikzpicture}[fill opacity=.1,text opacity=1]
+    \draw
+      (0,0) [point="M"above right] circle(2)
+      +(-90-42:2) [point="B"below]
+      +(-90+42:2)  [point="C"below]
+      +(70:2)  [point="A"]
+      (A) -- (B) -- (C) -- cycle
+      (B) edge[red,dashed,"$|$"{sloped,anchor=center,scale=.49}] (M)
+      (C) edge[red,dashed,"$|$"{sloped,anchor=center,scale=.49}] (M)
+      ;
+  \end{tikzpicture}
+\end{document}

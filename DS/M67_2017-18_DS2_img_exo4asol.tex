@@ -1,0 +1,28 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms,rightangles}
+
+\begin{document}
+  \begin{tikzpicture}[nodes={scale=.84}]
+    \draw
+      (0,0) [point="B"below]
+      (4,0) [point="C"below]
+      (2,0) +(70:2)  [point="A"]
+      (A) -- (B) -- (C) --cycle
+      pic[draw,scale=.4]{right angle=B--A--C}
+      ([projection=B--C]A) [point="A'"below]
+      --(A)
+      pic[draw,scale=.4]{right angle=A--A'--C}
+    ;
+    \draw[red]
+       (2.1,0)[point="P"below]
+      (A) -- (P)
+      ([projection=A--C]P) [point="N"right]
+      ([projection=A--B]P) [point="M"left]
+      (P) -- (N)
+      (P) -- (M)
+      pic[draw,scale=.4]{right angle=P--M--A}
+      pic[draw,scale=.4]{right angle=P--N--A}
+      (M) edge[thick,blue] (N)
+    ;
+  \end{tikzpicture}
+\end{document}

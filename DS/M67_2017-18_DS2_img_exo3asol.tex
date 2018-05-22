@@ -1,0 +1,16 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms}
+
+\begin{document}
+  \begin{tikzpicture}[fill opacity=.1,text opacity=1]
+    \draw
+      (0,0) [point="B"below]
+      -- (3,0)  [point="C"below]
+      [point={pos=.5,"I"below}]
+      (I)+(75:1) [point="M"left]
+      +(75:3)  [point="A"right]
+      (C)-- (A)--(B)
+      ;
+    \draw[red,shorten >= -4mm] (I) -- (A) [point={pos=2/3}];
+  \end{tikzpicture}
+\end{document}

@@ -1,0 +1,23 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms}
+
+\begin{document}
+  \begin{tikzpicture}
+    \draw
+        (0,0)     [point="A"below]
+      -- (3,0)    [point="B"below]
+      -- (2.5,2)  [point="C"]
+      -- (1,2)    [point="D"]
+      -- cycle
+      (A)--(C)
+      (B)--(D)
+      (intersection of A--C and B--D) [point="O"below]
+      ([translation=D--C]O) coordinate[label=right:$\Delta$](K)
+      (K)edge[densely dotted] ([translation=C--D]O)
+      (intersection of O--K and A--D) [point="I"above left]
+      (intersection of O--K and B--C) [point="J"above right]
+    ;
+    \fill[opacity=.1,blue] (A) --(C)--(D);
+    \fill[opacity=.1,red] (A) --(B)--(D);
+  \end{tikzpicture}
+\end{document}

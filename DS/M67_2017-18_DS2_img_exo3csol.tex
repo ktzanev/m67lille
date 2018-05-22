@@ -1,0 +1,25 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms,rightangles}
+
+\begin{document}
+  \begin{tikzpicture}
+    \draw
+      (0,0) [point="B"below]
+      (4,0) [point="C"below]
+      (2.8,3)  [point="A"left]
+      (A) -- (B) -- (C) -- cycle
+    ;
+    \draw[red]
+      ([projection=A--C]B) [point="I"right]
+      ([projection=A--B]C) [point="J"left]
+      (B) -- (I)
+      (C) -- (J)
+      (intersection of B--I and C--J) [point="M"{anchor=-110,black}]
+    ;
+    \fill[opacity=.1,red] (B) -- (C) -- (M) -- cycle;
+    \path
+      pic[draw,scale=.35]{right angle=B--I--C}
+      pic[draw,scale=.35]{right angle=C--J--B}
+    ;
+  \end{tikzpicture}
+\end{document}

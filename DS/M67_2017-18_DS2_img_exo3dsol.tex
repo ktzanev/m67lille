@@ -1,0 +1,28 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,euclid.transforms,angles}
+
+\begin{document}
+  \begin{tikzpicture}
+    \draw
+      (0,0) [point="B"below]
+      (4,0) [point="C"below]
+      (2.8,3)  [point="A"left]
+      (B) edge[shorten >=-5mm,-latex] (A)
+      (C) edge[shorten >=-4mm,-latex] (A)
+      (B) -- (C)
+    ;
+    \draw[overlay,red]
+      ([translation=B--C]A) coordinate(K)
+      ([translation=C--B]A) coordinate(L)
+      (intersection of B--K and A--C) [point="I"right]
+      (intersection of C--L and A--B) [point="J"left]
+      (B) -- (I)
+      (C) -- (J)
+      (intersection of B--I and C--J) [point="M"black]
+    ;
+    \path
+      pic[draw]{angle=C--B--I} pic[draw,scale=1.1]{angle=I--B--A}
+      pic[draw,double]{angle=A--C--J} pic[draw,double,scale=1.1]{angle=J--C--B}
+    ;
+  \end{tikzpicture}
+\end{document}
