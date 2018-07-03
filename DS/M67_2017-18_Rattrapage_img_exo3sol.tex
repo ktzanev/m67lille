@@ -1,0 +1,29 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints}
+\pgfdeclarelayer{background}
+\pgfsetlayers{background,main,points}
+\begin{document}
+  \begin{tikzpicture}[draw=orange]
+    \draw
+          (0,0) [point="A"below]
+      -- (3,0) [point="B"below]
+      -- (3,2) [point="C"above]
+      -- (0,2) [point="D"above]
+      -- cycle
+          (0,1) [point="I"left]
+          (1.5,2) [point="J"above]
+          (C) -- (I) (A) -- (J)
+          (1,4/3) [point="M"{above left,inner sep=0}]
+      ;
+    \draw[dashed] (A) -- (C);
+    \begin{pgfonlayer}{background}
+      \fill[orange!7]
+        (A) -- (C) -- (D)
+      ;
+      \fill[blue!14,opacity=.5]
+        (A) -- (B) -- (C) -- (M)
+        (D) -- (I) -- (M) -- (J)
+      ;
+    \end{pgfonlayer}
+  \end{tikzpicture}
+\end{document}

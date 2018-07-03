@@ -22,5 +22,6 @@ Dans [ce dépôt](https://github.com/ktzanev/m67lille) vous pouvez trouver les s
 - Le Contrôle [[tex](https://ktzanev.github.io/m67lille/DS/M67_2017-18_CC.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_CC_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_CC_solutions.pdf)]
 - Feuille de TD n°4 _(non faite en TD)_ [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD4.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2017-18_TD4.pdf)]
 - Le DS2 [[tex](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS2.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS2_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_DS2_solutions.pdf)]
+- Le Rattrapage [[tex](https://ktzanev.github.io/m67lille/DS/M67_2017-18_Rattrapage.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_Rattrapage_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2017-18_Rattrapage_solutions.pdf)]
 
 Pour compiler ces feuilles de td vous avez besoin de la feuille de style [M67tds.sty](https://ktzanev.github.io/m67lille/TDs/M67tds.sty) ainsi que le [logo du déprtement](https://ktzanev.github.io/m67lille/TDs/ul-fst-math_noir.pdf).
