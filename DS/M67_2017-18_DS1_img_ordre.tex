@@ -1,8 +1,0 @@
-\documentclass[tikz,border=7pt]{standalone}
-\usetikzlibrary{nicepoints}
-\begin{document}
-  \begin{tikzpicture}[scale=1.5]
-    \draw (0,0) [point="A"below] -- (1,0) [point="C"below] -- (2,0) [point="B"below] (A)  -- (49:1) [point="E"right]   -- (49:2) [point="F"right] (F) -- (C) (F) -- (B);
-    \draw[dotted] (E) -- +(-70:.4)  (E) -- node[sloped,below,scale=.84]{$(ED)$}+(-70:-.84);
-  \end{tikzpicture}
-\end{document}
