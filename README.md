@@ -18,6 +18,7 @@ Vous pouvez récupérer [ce dépôt](https://github.com/ktzanev/m67lille) de deu
 Dans [ce dépôt](https://github.com/ktzanev/m67lille) vous pouvez trouver les sources LaTeX et les PDFs (compilés avec XeLaTeX) suivants :
 
 - Feuille de TD n°1 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD1.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD1.pdf)]
+- Feuille de TD n°2 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD2.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD2.pdf)]
 
 Pour compiler ces documents LaTeX vous avez besoin de la feuille de style [M67tds.sty](https://ktzanev.github.io/m67lille/TDs/M67tds.sty) ainsi que le [logo du déprtement](https://ktzanev.github.io/m67lille/TDs/ul-fst-math_noir.pdf).
 
