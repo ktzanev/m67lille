@@ -1,0 +1,28 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usepackage{tkz-euclide}
+\usetkzobj{all} % on charge tous les objets
+
+\begin{document}
+  \begin{tikzpicture}[every node/.style={circle, inner sep=1pt}]
+    \clip (-.5,-1) rectangle (5.5,3.5);
+    % définition des points
+    \tkzDefPoints{5/0/R,5/3/Q}
+    \tkzInterCC[R](R,5 cm)(Q,6 cm)
+    \tkzGetFirstPoint{P}
+    % cercles et segments
+    \tkzDefCircle[in](P,Q,R)
+    \tkzGetPoint{O} \tkzGetLength{rCI}
+    \tkzDefBarycentricPoint(P=1,Q=1)
+    \tkzGetPoint{S}
+    \tkzTangent[from with R = S](O,\rCI pt)
+    \tkzGetFirstPoint{t}
+    \tkzInterLL(P,R)(S,t) \tkzGetPoint{T}
+    \tkzDrawPolygon(P,Q,R)
+    \tkzDrawCircle[R](O,\rCI pt)
+    \tkzDrawSegment(S,T)
+    \tkzFillPolygon[fill opacity=.1](P,S,T)
+    \tkzDrawPoints(P,Q,R,S,T)
+    \tkzLabelPoints[above](P,Q,S)
+    \tkzLabelPoints[below](R,T)
+  \end{tikzpicture}
+\end{document}
