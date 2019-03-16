@@ -1,0 +1,22 @@
+\documentclass[border=7pt]{standalone}
+\usepackage{tkz-euclide}
+\usetkzobj{all} % on charge tous les objets
+
+\begin{document}
+  \begin{tikzpicture}[scale=2,rotate=10]
+    % définition des points
+    \tkzDefPoints{0/0/A, 2/0/P, 3/0/C, 2/1/B}
+    % tracer
+    \tkzDrawLine[add= 2mm and 2mm](A,C)
+    \tkzDrawSegments(B,A B,P B,C)
+    % marquer les angles
+    \tkzMarkRightAngle[scale=.5](B,P,A)
+    % marquage des points
+    \tkzDrawPoints(A,P,B,C)
+    \tkzLabelPoints[below](A,P,C)
+    \tkzLabelPoints[above left](B)
+  \end{tikzpicture}
+\end{document}
+\begin{tikzpicture}
+
+\end{tikzpicture}

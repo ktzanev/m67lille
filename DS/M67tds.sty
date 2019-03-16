@@ -119,11 +119,11 @@
 \newcommand{\sidebyside}[3]{%
 \vspace{4pt}\par%
 \noindent%
-\begin{minipage}{#1\textwidth}
+\begin{minipage}[t]{#1\textwidth}
   #2
 \end{minipage}% This must go next to `\end{minipage}`
 \hfill%
-\begin{minipage}{\dimexpr \textwidth-#1\textwidth-10pt}
+\begin{minipage}[t]{\dimexpr \textwidth-#1\textwidth-10pt}
   #3
 \end{minipage}%
 }

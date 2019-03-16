@@ -1,0 +1,36 @@
+\documentclass[border=7pt]{standalone}
+\usepackage{tkz-euclide}
+\usetkzobj{all} % on charge tous les objets
+
+\begin{document}
+  \begin{tikzpicture}[scale=2]
+    %\clip (-1.4,-1.4) rectangle (1.7,3.5);
+    % définition des points
+    \tkzDefPoints{0/0/O, 1/0/I, 1/1/J, 0/1/K}
+    \path
+        (2,0) coordinate (A)
+        (60:2) coordinate (B1) (-60:2) coordinate (B2)
+        ({1+sqrt(2)},0) coordinate (C1) ({1-sqrt(2)},0) coordinate (C2)
+        ({1+sqrt(2)},-1) coordinate (D)
+        ({1-2*sqrt(2)},0) coordinate (C3)
+        ({1+2*sqrt(2)},-1) coordinate (E)
+        ({1+sqrt(2)},{-2/3}) coordinate (L)
+    ;
+    % tracer
+    \tkzDrawLine[add= 2mm and 2mm](C3,C1)
+    \tkzDrawLine[add= 2mm and 2mm](B1,B2)
+    \tkzDrawLine[add= 2mm and 2mm](C1,D)
+    \tkzDrawLine[add= 2mm and 2mm](C3,D)
+    \tkzDrawLine[add= 2mm and 2mm](C2,E)
+    \tkzCompasss[draw=red](I,A A,B1 A,B2 O,B1 O,B2 I,J J,K O,K I,C1 I,C2 C2,C3 C1,D I,D D,E C1,E)
+    \tkzDrawSegments(O,K K,J)
+    % % marquage des points
+    \tkzDrawPoints[fill=orange](O,I,J,K,L,A,B1,B2,C1,C2,C3,D,E)
+    \tkzLabelPoints[above right](O,I,J,K,L,A,C1,D,E)
+    \tkzLabelPoints[right](B1,B2)
+    \tkzLabelPoints[above left](C2,C3)
+  \end{tikzpicture}
+\end{document}
+\begin{tikzpicture}
+
+\end{tikzpicture}
