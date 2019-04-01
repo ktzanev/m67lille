@@ -1,0 +1,22 @@
+\documentclass[tikz,border=-1pt]{standalone}
+\usetikzlibrary{nicepoints,angles,quotes}
+
+\begin{document}
+  \begin{tikzpicture}[scale=1.4,nodes=circle,inner sep=2pt,angle radius=3mm]
+    \draw (0,0) circle(1);
+    \path
+      (70:1)[point="A"above]
+      (150:1)[point="B"above left]
+       (30:1)[point="A'"right]
+       (280:1)[point="B'"below];
+    \path (intersection of A--B and A'--B') [point="M"{anchor=240}];
+    \draw[fill=red, fill opacity=.2] (A) -- (M) -- (B') -- cycle;
+    \draw[fill=blue,fill opacity=.2] (B) -- (M) -- (A') -- cycle;
+    \draw[thick,red] (30:1) arc(30:70:1);
+    \path
+      pic[draw,fill=red,opacity=.7]{angle=A'--B'--A}
+      pic[draw,fill=red,opacity=.7]{angle=A'--B--A}
+      pic[draw,double]{angle=B--M--B'}
+    ;
+  \end{tikzpicture}
+\end{document}

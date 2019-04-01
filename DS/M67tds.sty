@@ -81,7 +81,7 @@
 \renewcommand{\labelenumii}{(\theenumii)}
 
 % exo difficile
-\newcommand{\hard}{\hspace{-2.1mm}\raisebox{.7ex}{${}^{\star}$}\hspace{.7mm}}
+\newcommand{\hard}{\raisebox{.7ex}{\llap{${}^{\star}$\kern 2pt}}}
 
 % convention
 \newcommand{\unindentlist}{\advance\leftskip-4cm}
@@ -114,6 +114,7 @@
 
 % -------------- Pour les figures
 \usepackage{graphicx}
+\usepackage[export]{adjustbox} % pour pouvoir utiliser valign=t, vspace, margin, ...
 
 % ---- pour mettre des images à côté des textes
 \newcommand{\sidebyside}[3]{%
