@@ -20,9 +20,11 @@
 \setlength{\belowdisplayshortskip}{2pt plus 4pt}
 % ------------- Les standards
 \usepackage{mathtools,amssymb,bm,amsthm}
-\usepackage{yhmath} % pour le \wideparen
+\usepackage{mathabx} % pour les doubles crochets \ldbrack, \rdbrack d'intervalles d'entiers, \leq français et \wideparen
+%\usepackage{yhmath} % pour le \wideparen
 \usepackage[french]{babel}
 \usepackage[babel=true]{csquotes}
+\frenchbsetup{og=«, fg=»}
 \frenchspacing
 \usepackage{xspace} % pour ne pas «gobble» des espaces après \ieme par exemple
 % ------------- Pour ajuster les enumerate
@@ -125,6 +127,7 @@
 \end{minipage}% This must go next to `\end{minipage}`
 \hfill%
 \begin{minipage}[t]{\dimexpr \textwidth-#1\textwidth-10pt}
+  \centering%
   #3
 \end{minipage}%
 }

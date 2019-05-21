@@ -1,0 +1,26 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints,angles}
+
+\begin{document}
+  \begin{tikzpicture}[nodes={circle,inner sep=1 pt}]
+    \draw
+      circle(2)
+      (310:2.21) node{$\mathcal{C}_{2}$}
+      (2,0) [point="M"right] --
+      (0,0) [point="O"left]
+      (1,0)
+      circle(1)
+      +(100:1) [point="A"above left]
+      +(270:1.21) node{$\mathcal{C}_{1}$}
+      (50:2) [point="B"] --
+      (230:2) [point="C"]
+
+    ;
+    \draw[red]
+      (C) -- (M) -- (B)
+      (M) -- (A)
+      pic[draw,scale=.35]{right angle=M--A--O}
+      pic[draw,scale=.35]{right angle=C--M--B}
+    ;
+  \end{tikzpicture}
+\end{document}

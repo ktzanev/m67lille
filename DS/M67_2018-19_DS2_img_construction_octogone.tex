@@ -1,0 +1,29 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{shapes.geometric,nicepoints}
+\usepackage{tkz-euclide}
+\usetkzobj{all} % on charge tous les objets
+
+\begin{document}
+  \begin{tikzpicture}[nodes={circle,inner sep=1 pt}]
+    \draw
+      (0,0) [point="O"{red,anchor=290}] circle (2)
+      foreach[count=~, count=\i from 0] \dir in {108.5,153.5,198.5,320,288.5,333.5,378.5,150}{
+        (-22.5+45*\i:2) [point="A_~"{circle,anchor={\dir}}]\ifnum~>1 -- (A_\i)\fi
+        (-22.5+45*\i:4) coordinate (B_~)
+      }
+      (A_8) -- (A_1);
+    \path (A_1) node[red,anchor=214,inner sep=2pt]{$I$};
+
+    % Compas
+    \tkzCompasss[draw=red](A_1,B_3 A_1,B_7 A_5,B_3 A_5,B_7 A_1,B_2 A_3,B_2 A_3,A_4 A_7,A_8)
+    % tracer
+    \tkzDrawLines[add= 4mm and 4mm](A_1,A_5 B_3,B_7 B_2,A_6)
+    % label
+    \path[red] 
+    	(B_3) [point="J"{anchor=345,inner sep=5pt}]
+    	(B_7) [point="K"{anchor=345,inner sep=5pt}]
+    	(B_2) [point="L"{anchor=345,inner sep=5pt}]
+    ;
+  \end{tikzpicture}
+\end{document}
+

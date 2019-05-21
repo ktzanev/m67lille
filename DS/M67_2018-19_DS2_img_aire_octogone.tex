@@ -1,0 +1,17 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{shapes.geometric,nicepoints}
+
+\begin{document}
+  \begin{tikzpicture}
+    \draw[fill=lightgray]
+      (-2,-2) rectangle (2,2)
+      (0,0)
+      node[regular polygon, regular polygon sides=8, inner sep=1.414213562373095cm, fill=white,draw] (O) {}
+      [nodes={scale=1.4}]
+      (-2.35,0) node{$a$}
+      (-2.35,1.5) node{$\frac{a}{\sqrt{2}}$}
+      (-2.35,-1.5) node{$\frac{a}{\sqrt{2}}$}
+    ;
+
+  \end{tikzpicture}
+\end{document}

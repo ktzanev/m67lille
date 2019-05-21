@@ -22,6 +22,7 @@ Dans [ce dépôt](https://github.com/ktzanev/m67lille) vous pouvez trouver les s
 - Feuille de TD n°3 [[tex](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD3.tex)] [[pdf](https://ktzanev.github.io/m67lille/TDs/M67_2018-19_TD3.pdf)]
 - Le DS1 [[tex](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS1.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS1_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS1_solutions.pdf)]
 - Le Contrôle [[tex](https://ktzanev.github.io/m67lille/DS/M67_2018-19_CC.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_CC_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_CC_solutions.pdf)]
+- Le DS2 [[tex](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS2.tex)] [sujet [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS2_sujet.pdf)] [solutions [pdf](https://ktzanev.github.io/m67lille/DS/M67_2018-19_DS2_solutions.pdf)]
 
 
 
