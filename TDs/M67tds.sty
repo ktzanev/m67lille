@@ -20,11 +20,34 @@
 \setlength{\belowdisplayshortskip}{2pt plus 4pt}
 % ------------- Les standards
 \usepackage{mathtools,amssymb,bm,amsthm}
-\usepackage{yhmath} % pour le \wideparen
 \usepackage[french]{babel}
 \usepackage[babel=true]{csquotes}
+\frenchbsetup{og=«, fg=»}
 \frenchspacing
 \usepackage{xspace} % pour ne pas «gobble» des espaces après \ieme par exemple
+% ------------- Autres symboles
+% Pour eviter d'utiliser les packages pas très compatibles avec amssymb :
+% - `mathabx` pour les doubles crochets \ldbrack, \rdbrack d'intervalles d'entiers, \leq français et \wideparen,
+% - `yhmath` pour le \wideparen.
+% declare \llbracket and \rrbracket à partir de `fourier`
+\DeclareFontEncoding{FMS}{}{}
+\DeclareFontSubstitution{FMS}{futm}{m}{n}
+\DeclareSymbolFont{fourier}{FMS}{futm}{m}{n}%
+\DeclareFontEncoding{FMX}{}{}
+\DeclareFontSubstitution{FMX}{futm}{m}{n}
+\DeclareSymbolFont{largefourier}{FMX}{futm}{m}{n}%
+\DeclareMathDelimiter{\llbracket}{\mathopen}{fourier}{153}{largefourier}{133}
+\DeclareMathDelimiter{\rrbracket}{\mathclose}{fourier}{154}{largefourier}{134}
+% decalre \wideparen à partir de `yhmath`
+\DeclareFontFamily{OMX}{yhex}{}
+\DeclareFontShape{OMX}{yhex}{m}{n}{<->yhcmex10}{}
+\DeclareSymbolFont{yhlargesymbols}{OMX}{yhex}{m}{n}
+\DeclareMathAccent{\wideparen}{\mathord}{yhlargesymbols}{"F3}
+% ==== met \leq et \req à la française (\oleq et \ogeq sont les originaux)
+\let\oleq\leq
+\let\ogeq\geq
+\let\leq\leqslant
+\let\geq\geqslant
 % ------------- Pour ajuster les enumerate
 \usepackage[shortlabels]{enumitem}
 % compatibilite enumitem - franch babel (d'après la doc de 28 septembre 2014, p.14)
@@ -81,7 +104,7 @@
 \renewcommand{\labelenumii}{(\theenumii)}
 
 % exo difficile
-\newcommand{\hard}{\hspace{-2.1mm}\raisebox{.7ex}{${}^{\star}$}\hspace{.7mm}}
+\newcommand{\hard}{\raisebox{.7ex}{\llap{${}^{\star}$\kern 2pt}}}
 
 % convention
 \newcommand{\unindentlist}{\advance\leftskip-4cm}
@@ -114,16 +137,18 @@
 
 % -------------- Pour les figures
 \usepackage{graphicx}
+\usepackage[export]{adjustbox} % pour pouvoir utiliser valign=t, vspace, margin, ...
 
 % ---- pour mettre des images à côté des textes
 \newcommand{\sidebyside}[3]{%
 \vspace{4pt}\par%
 \noindent%
-\begin{minipage}{#1\textwidth}
+\begin{minipage}[t]{#1\textwidth}
   #2
 \end{minipage}% This must go next to `\end{minipage}`
 \hfill%
-\begin{minipage}{\dimexpr \textwidth-#1\textwidth-10pt}
+\begin{minipage}[t]{\dimexpr \textwidth-#1\textwidth-10pt}
+  \centering%
   #3
 \end{minipage}%
 }
