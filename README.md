@@ -2,7 +2,7 @@
 
 [page web](https://ktzanev.github.io/m67lille/)
 
-Les documents du module M67 - «Gémétrie élémentaire» de l'Université de Lille
+Les documents du module M67 - « Gémétrie élémentaire » de l'Université de Lille
 
 Vous pouvez récupérer [ce dépôt](https://github.com/ktzanev/m67lille) de deux façons faciles :
 
