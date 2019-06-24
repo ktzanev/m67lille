@@ -63,10 +63,24 @@ On rappelle les propriétés d'incidence et d'ordre:\\[-1.7\baselineskip]
 \end{exo}
 
 %-----------------------------------
+\begin{exo}[.7] (Barycentre)
+
+  Soient deux points $A \neq B$. Montrer que les assertions suivantes sont équivalentes.\\[-1.7\baselineskip]
+  \begin{multicols}{2}
+    \begin{enumerate}
+      \item $M \in (AB)$;
+      \item $\exists! \lambda \in \mathbb{R}, M=(1-\lambda) A + \lambda B $;
+      \item $\exists! \mu  \in \mathbb{R}, M=\mu A + (1-\mu) B $;
+      \item $\exists! s,t  \in \mathbb{R}, s+t=1, M=s A + t B $;
+    \end{enumerate}
+  \end{multicols}
+\end{exo}
+
+%-----------------------------------
 \begin{exo} (Extrémités d'un segment, origine d'une demi-droite)
 
   \begin{enumerate}
-    \item Soient $A$ et $B$ deux points du plan. On rappelle que les points \emph{entre} $A$ et $B$ sont les points de la forme $\lambda A + (1-\lambda) B$ avec $\lambda \in ]0,1[$, que leur ensemble est noté $]AB[$, et que le segment $[AB]$ est défini comme l'ensemble contenant $A$, $B$ et tous les points entre $A$ et $B$.
+    \item Soient $A$ et $B$ deux points du plan. On rappelle que si $A \neq B$ les points \emph{entre} $A$ et $B$ sont les points de la forme $\lambda A + (1-\lambda) B$ avec $\lambda \in ]0,1[$, que leur ensemble est noté $]AB[$, et que le segment $[AB]$ est défini comme l'ensemble contenant $A$, $B$ et tous les points entre $A$ et $B$. Dans le cas où $A=B$, nous avons $]AB[ = \emptyset$ et $[AB] = \left\{ A \right\}$.
     \begin{enumerate}
       \item Montrer qu'il n'existe aucuns points $C$ et $D$ appartenant à $[AB]$ tels que $A$ soit entre $C$ et $D$.
       \item En déduire que le couple non ordonné $\{A,B\}$ est déterminé par le segment $[AB]$.
@@ -93,7 +107,7 @@ On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On 
 \end{exo}
 
 
-
+\newpage
 % ==================================
 \section{Triplets pythagoriciens}
 % ==================================
@@ -142,8 +156,8 @@ On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On 
 
 \begin{enumerate}
   \item Montrer qu'une isométrie est injective.
-  \item Montrer qu'une isométrie $f$ présèvre les barycentres, c.-à-d. $f\big((1- \lambda )A + \lambda B\big) = (1- \lambda )f(A) + \lambda (B)$ pour tout deux points $A$ et $B$, et $\lambda \in \mathbb{R}$.
-   \item Montrer qu'une isométrie $f$ conserve l'alignement et l'ordre sur les droites (plus précisément, les points $A$, $B$ et $C$ sont alignés dans cet ordre si et seulement si leurs images $f(A)$, $f(B)$ et $f(C)$ le sont).
+  \item Montrer qu'une isométrie $f$ conserve l'alignement et l'ordre sur les droites (plus précisément, les points $A$, $B$ et $C$ sont alignés dans cet ordre si et seulement si leurs images $f(A)$, $f(B)$ et $f(C)$ le sont).
+  \item Montrer qu'une isométrie $f$ présèvre les barycentres, c.-à-d. $f\big((1- \lambda )A + \lambda B\big) = (1- \lambda )f(A) + \lambda f(B)$ pour tout deux points $A$ et $B$, et $\lambda \in \mathbb{R}$.
   \item Montrer qu'une isométrie est surjective. En déduire que les isométries forment un groupe.
   \item Montrer qu'une isométrie conserve le parallélisme et l'orthogonalité des droites.
 \end{enumerate}
@@ -175,34 +189,6 @@ On dit que deux segments sont \emph{congruents} s'ils ont la même longueur. On 
     \item Déterminer les points fixes d'un produit de deux réflexions. Montrer qu'un tel produit est ou bien une translation, ou bien une rotation. Préciser les caractéristiques de ces transformations en fonction des axes des réflexions.
     \item Montrer qu'un produit de trois réflexions est ou bien une réflexion, ou bien une \emph{symétrie glissée}, c.-à-d. le produit d'une réflexion d'axe $\ens{D}$ et d'une translation non triviale dirigée suivant $\ens{D}$.
     \item Dresser la liste des types d'isométries planes, en précisant les points fixes de chacune d'elles.
-  \end{enumerate}
-\end{exo}
-
-%-----------------------------------
-\begin{exo} (Capes 2007, 2\ieme{} épreuve)
-
-  \begin{center}
-    \textbf{Partie V. GROUPES DIÉDRAUX}
-  \end{center}
-  \begin{enumerate}[\textbf{1)}]
-    \item Soit $E$ un plan affine euclidien orienté. Soit $p \in \mathbb{N}$, $p \geq 2$. On appelle groupe diédral d'ordre $2p$, noté $D_{2p}$, le groupe des isométries laissant invariant un polygone régulier
-    \[
-      \mathcal{P}_{p}=\left\{M_{0},\ldots,M_{p-1}\right\}
-    \]
-    à $p$ sommets, parcourus dans le sens direct. On pose $M_{p}=M_{0}$.
-    \begin{enumerate}[a)]
-      \item Montrer que le sous-groupe $C_{p}$ de $D_{2p}$ constitué des isométries directes est un groupe cyclique d'ordre $p$ engendré par la rotation $\rho$ de centre $O$ et d'angle $\frac{2 \pi}{p}$, où $O$ est le centre du polygone $\mathcal{P}_{p}$.
-      \item Préciser une symétrie orthogonale $\sigma$ laissant le polygone $\mathcal{P}_{p}$ invariant.
-      \item Montrer que
-      $
-        D_{2p} =
-          \left\{
-            \rho^{i}\circ \sigma^{j} \,;\, i \in \{1,\ldots,p-1\} \text{ et } j \in \{0,1\}
-          \right\}
-      $
-      et en déduire que $D_{2p}$ est un groupe d'ordre $2p$.
-      \item Soit $k \in \{1,\ldots,p-1\}$. Montrer que $\sigma \circ \rho^{k} \circ \sigma = \rho^{p-k}$.
-    \end{enumerate}
   \end{enumerate}
 \end{exo}
 

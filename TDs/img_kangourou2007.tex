@@ -1,0 +1,12 @@
+\documentclass[tikz,border=7pt]{standalone}
+\usetikzlibrary{nicepoints}
+\usetikzlibrary{angles}
+\begin{document}
+  \begin{tikzpicture}[scale=.5,circle,inner sep=1pt]
+    \draw
+      (-3,0) [point="K"below] -- (3,0) [point="L"below];
+    \filldraw[fill opacity=.1]
+      (L) arc(0:180:3) arc(180:0:{sqrt(5)});
+    \draw (-2,{sqrt(5)})[point="M"above left] -- (2,{sqrt(5)})[point="N"above right];
+  \end{tikzpicture}
+\end{document}
