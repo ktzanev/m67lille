@@ -1,76 +1,15 @@
-# from WinEdt
-*.dvi
-*.ps
-*.toc
-*.log
-*.tmp
-*.bak
-*.aux
-*.synctex
-*.bbl
-*.blg
-*.idx
-*.ind
-*.ilg
-*.gls
-*.glo
-*.lof
-*.lot
-*.aa?
-*.prj
+# interdire tout les fichiers (pas les dossiers)
+*
+!/*
 
-# for LaTeXDaemon
-TeXAux/
-*.fmt
+# sauf les fichiers
+!*.sty
+!*.tex
+!*.pdf
 
-#from GitHub/gitignore
-*.acn
-*.acr
-*.alg
-*.aux
-*.bbl
-*.blg
-*.dvi
-*.fdb_latexmk
-*.glg
-*.glo
-*.gls
-*.idx
-*.ilg
-*.ind
-*.ist
-*.lof
-*.log
-*.lot
-*.maf
-*.mtc
-*.mtc0
-*.nav
-*.nlo
-*.out
-*.pdfsync
-*.ps
-*.snm
-*.synctex.gz
-*.toc
-*.vrb
-*.xdy
-*.tdo
-
-#perso
-*.lnk
-*.zip
-*.sublime*
-
-Administratif
-Documents
-Olivier
-Work
-*.sh
-*.ods
-*.xlsx
-*Olivier*
-Interro/
-DS
+# mais pas dans les dossiers suivants
+/Administratif
+/Kangourou
+/DS
 
 
