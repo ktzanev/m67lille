@@ -6,10 +6,13 @@
 !*.sty
 !*.tex
 !*.pdf
+!*.md
 
 # mais pas dans les dossiers suivants
 /Administratif
 /Kangourou
 /DS
+/Cours
+/Work
 
 
