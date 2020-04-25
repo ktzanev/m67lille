@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage{examcovid}
+\tikzset{
+  hide card, hide identity, hide title, hide pages,
+  every picture/.style={draw=lightgray}
+}
+\newcommand{\atendtemplate}{
+  \foreach \i in {1,...,25}
+    \draw[black] (SW) ++(0,{\i*7 mm}) coordinate (L) -- (L-|SE);
+}
+\begin{document}
+  \drawtemplate
+\end{document}

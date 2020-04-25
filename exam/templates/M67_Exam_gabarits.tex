@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{examcovid}
+\newcommand{\vh}[2]{%
+  \begin{tikzpicture}[red]
+    \pgfmathsetmacro{\vm}{#1-0.2}
+    \pgfmathsetmacro{\hm}{#2-0.2}
+    \ifx0#10\else
+      \draw[ultra thick, latex-latex]
+        (0,-.3*\vm) -- node[right]{$#1$ cm} (0,.7*\vm);
+    \fi
+    \ifx0#20\else
+      \draw[ultra thick, latex-latex]
+        (-.7*\hm,0) -- node[above]{$#2$ cm} (.3*\hm,0);
+    \fi
+  \end{tikzpicture}%
+}
+
+\tikzset{
+  text card = {\vh{5.7}{9}},
+  card/.style = {},
+  text identity = {\vh{3.5}{8}},
+  identity/.style = {},
+  text title = {\vh{2.2}{}},
+  title/.style = {},
+  text security = {\vh{1}{}},
+  security/.style = {},
+  main/.style = overlay
+}
+\newcommand{\textmain}{\vh{19}{17}}
+\newcommand{\atendtemplate}{%
+  \path
+    ($(NW)!.5!(NE)$) node[overlay,above]{\vh{2}{}}
+    ($(SW)!.5!(SE)$) node[overlay,below]{\vh{2}{}}
+    ($(SW)!.5!(NW)$) node[overlay,left]{\vh{}{2}}
+    ($(SE)!.5!(NE)$) node[overlay,right]{\vh{}{2}}
+  ;
+}
+\begin{document}
+  \drawtemplate
+\end{document}

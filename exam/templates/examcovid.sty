@@ -1,0 +1,116 @@
+\ProvidesPackage{examcovid}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage[french]{babel}
+\pagestyle{empty}
+\parindent 0pt
+
+% la bordure de la page
+\newif\ifhideborder
+\tikzset{
+  hide border/.is if=hideborder
+}
+% la zone carte d'étudiant
+\newif\ifhidecard
+\tikzset{
+  hide card/.is if=hidecard,
+  card/.style={align=center},
+  text card/.store in=\textcard,
+  text card = {
+    \textsc{\large Carte d'étudiant}\\
+    \emph{où autre pièce d'identité}
+  }
+}
+% la zone identité
+\newif\ifhideidentity
+\tikzset{
+  hide identity/.is if=hideidentity,
+  identity/.style = {text width=7cm},
+  text identity/.store in=\textidentity,
+  text identity = {
+    \textsc{NOM : }\hrulefill\\[.35\baselineskip]
+    \textsc{Prénom : }\hrulefill\\[.7\baselineskip]
+    \textsc{Date : }\hrulefill\\[.35\baselineskip]
+    \textsc{Heure : }\hrulefill\\[.35\baselineskip]
+  }
+}
+% la zone de titre
+\newif\ifhidetitle
+\tikzset{
+  hide title/.is if=hidetitle,
+  title/.style = {align=center},
+  text title/.store in=\texttitle,
+  text title={}
+}
+% la zone de sécurité
+\newif\ifhidesecurity
+\tikzset{
+  hide security/.is if=hidesecurity,
+  security/.style = {gray,scale=2},
+  text security/.store in=\textsecurity,
+  text security = {
+    \textsc{ne pas \smash{é}crire dans cette zone}
+  }
+}
+% le numéro de page
+\newif\ifhidepages
+\tikzset{
+  hide pages/.is if=hidepages
+}
+
+% =============================================================
+\newcommand{\drawtemplate}{%
+\begin{tikzpicture}[ultra thick]
+% ------- les coordonnées
+  \path
+    % les coins de la page
+    (0,0) coordinate (SW)
+    (\textwidth-2\pgflinewidth,\textheight-2\pgflinewidth) coordinate (NE)
+    (SW-|NE) coordinate (SE)
+    (NE-|SW) coordinate (NW)
+    % le coin SW de la carte d'étudiant
+    (NE) ++(-90mm,-57mm) coordinate (M)
+    % le coin SE de la zone d'identité
+    (M|-NE) ++(0,-35mm) coordinate (I)
+    % l'extrémité E de ligne de bas de la zone de sécurité
+    (M-|SE) ++(0,-1) coordinate(L)
+  ;
+% ------- les bords de la page
+\ifhideborder\else
+  \draw[custom border/.try] (SW) rectangle (NE);
+\fi
+% ------- carte d'étudiants
+\ifhidecard\else
+  \draw (NE) rectangle node[card]{\textcard} (M);
+\fi
+% ------- informations d'identité
+\ifhideidentity\else
+  \draw (NW) rectangle node[identity]{\textidentity} (I);
+\fi
+% ------- titre
+\ifhidetitle\else
+  \draw (NW|-I) rectangle node[title]{\texttitle} (M);
+\fi
+% ------- zone de sécurité
+\ifhidesecurity\else
+  \draw (NW|-M) rectangle node[security]{\textsecurity} (L);
+\fi
+% ------- numéro de page
+\ifhidepages\else
+  \node[outer sep=0mm, inner sep=3mm, below left, draw] at (L)
+    {\textsc{\small page : }\phantom{xx}/\phantom{xx}}
+  ;
+\fi
+% ------- zone de sécurité
+\ifdefined\textmain
+  \path (NW|-L) rectangle node[main/.try]{\textmain} (SE);
+\fi
+% -------
+\ifdefined\atendtemplate
+  \atendtemplate
+\fi
+
+\end{tikzpicture}%
+% =============================================================
+}
