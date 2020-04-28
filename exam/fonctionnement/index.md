@@ -6,11 +6,11 @@ Les trois phases seront notées. La note finale sera élaborée sur la base des 
 
 Pour chacune des phases il y aura des instructions plus détaillées envoyées au début de la phase en question.
 
-## Phase 1 : création d'exercices
+## Phase 1 : sélection d'exercices
 
 ### Fonctionnement
 
-Dans cette phase chaque étudiant devra choisir/créer/modifier un exercice, ainsi que sa solution.
+Dans cette phase chaque étudiant devra choisir/modifier/adapter un exercice, ainsi que d'écrire sa solution.
   - L'exercice doit s'inscrire dans une des thématiques traitées de M67. *(Chaque étudiant recevra la thématique dans laquelle il devra élaborer l'exercice).*
   - L'exercice ne doit être ni trop facile (faisable par tous les étudiants), ni trop difficile.
   - L'exercice doit être faisable en 1h et comporter entre 2 et 4 questions.
