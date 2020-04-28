@@ -64,12 +64,12 @@ Chaque solution sera évaluée lors de la phase 3. Une note sera attribuée sur 
 Chaque étudiant reçoit les solutions de `3n` exercices (avec les énoncés), y compris parmi les solutions initiales, où `n` est le nombre de solutions soumises (y compris vides, y compris la solution de la phase 1) dans la phase 2.
 
 Il évalue chaque question entre 0 et 5, comme suit :
-  - 0 : question faite ;
-  - 1 : question quasiment faite (manque la conclusion ou petite erreur de calcul à la fin) ;
-  - 2 : la partie principale (contenant les idées principales) est faite ;
-  - 3 : il y a une partie traitée, mais manque des arguments principaux ;
-  - 4 : il y a quelques éléments mineurs traités en relation avec la question ;
-  - 5 : pas d'éléments en relation avec la question ou question non traitée.
+  - 5 : question faite ;
+  - 4 : question quasiment faite (manque la conclusion ou petite erreur de calcul à la fin) ;
+  - 3 : la partie principale (contenant les idées principales) est faite ;
+  - 2 : il y a une partie traitée, mais manque des arguments principaux ;
+  - 1 : il y a quelques éléments mineurs traités en relation avec la question ;
+  - 0 : pas d'éléments en relation avec la question ou question non traitée.
 
 Il évaluera, comma dans la phase 2, également le sujet de l'exercice.
 
