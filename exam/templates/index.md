@@ -2,7 +2,7 @@
 
 Lors des phases 1 et 2, les productions doivent être écrites à la main sur des pages modèles. Ces pages modèles peuvent être téléchargées et imprimées à partir de cette page.
 
-Si l'étudiant ne dispose pas d'imprimante, il peut dessiner lui-même les modèles sur une page blanche A4 celons [les gabarits suivants](M67_Exam_gabarits.pdf).
+Si l'étudiant ne dispose pas d'imprimante, il peut dessiner lui-même les modèles sur une page blanche A4 selon [les gabarits suivants](M67_Exam_gabarits.pdf).
 
 ## Phase 1
 
@@ -23,5 +23,5 @@ Ces modèles peuvent être imprimés et placés derrière l'un des autres modèl
 
 # Conseils
 
-- Il est fortement recommandé d'imprimer (où de dessiner vous-même) le nombre de pages modèles nécessaires en avance. Nous vous conseillons : 2 modèles pour le sujet, 2 – 4 modèles pour la correction, 8 – 12 modèles pour les solutions.
+- Il est fortement recommandé d'imprimer (ou de dessiner vous-même) le nombre de pages modèles nécessaires en avance. Nous vous conseillons : 2 modèles pour le sujet, 2 – 4 modèles pour la correction, 8 – 12 modèles pour les solutions.
 - Il est fortement recommandé de vous entraîner à scanner (en `pdf` ou en `jpeg`) des documents manuscrits. Vous pouvez consulter la page [« Utiliser votre téléphone pour scanner des pages manuscrites »](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/).
