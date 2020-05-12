@@ -27,4 +27,4 @@ Ces modèles peuvent être imprimés et placés derrière l'un des autres modèl
 - Il est fortement recommandé de vous entraîner à scanner (en `pdf` ou en `jpeg`) des documents manuscrits. Vous pouvez consulter la page [« Utiliser votre téléphone pour scanner des pages manuscrites »](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/).
 - J'ai fait une vidéo qui montre comment scanner vos copies avec [doXisafe](https://play.google.com/store/apps/details?id=de.cib.doxisafe.android), le logiciel que j'utilise moi.
 
-[![Regarder la vidéo](youtube_doxisafe.png)](https://youtu.be/buC1FzO00pc)
+[![Regarder la vidéo](https://i.imgur.com/6ZVy5c5.png)](https://youtu.be/buC1FzO00pc)

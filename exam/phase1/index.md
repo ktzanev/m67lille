@@ -6,24 +6,24 @@ Dans cette phase vous devez choisir/créer/modifier un exercice, **ainsi que sa 
     - **[entre A et D]** « construction à la règle et au compas » ;
     - **[entre E et M]** « angles et longueurs »;
     - **[entre N et Z]** « aires ».
-- L'exercice doit être faisable en 1h et comporter entre 2 et 4 questions.
+- L'exercice doit être **faisable en 1h** et comporter **entre 2 et 4 questions**. Les questions doivent être notées **`a)`**, **`b)`**, **`c)`**, **`d)`** *(et pas 1,2,3,4)*.
 - L'exercice ne doit être ni trop facile (faisable en moins de 30 minutes), ni trop difficile (nécessitant plus d'une heure).
 - L'exercice peut-être proche d'un des exercices de tds ou des exercices donnés dans les examens des années précédentes.
 - Libre à l'étudiant de choisir ses sources d'inspiration (internet, livres, cours, manuels de lycée/collège \...). Vous pouvez trouver des suggestions sur [la page des ressources](ressources/).
 
-Cette phase se déroule sur 5 jours, du lundi 18 mai au vendredi 22 mai à 20h. Nous vous conseillons de ne pas attendre vendredi pour rendre vos travaux, car des problèmes technique peuvent apparaît.
+Cette phase se déroule sur 5 jours, du lundi 18 mai au **vendredi 22 mai à 20h**. Nous vous conseillons de ne pas attendre vendredi pour rendre vos travaux, car des problèmes technique peuvent apparaît.
 
 **Il est important de savoir que si vous ne rendez pas vos travaux à temps dans cette phase, vous ne pouvez pas participer au reste de l'examen.**
 
 ## L'exercice
 
-L'énoncé de l'exercice doit être écrit sur une [feuille modèle de sujet](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_sujet.pdf). Si nécessaire vous pouvez utiliser une feuille avec des lignes derrière la page blanche pour pouvoir écrire droit. Pour plus d'information (y compris si vous ne pouvez pas imprimer) voir la page des [modèles](https://ktzanev.github.io/m67lille/exam/templates).
+**L'énoncé** de l'exercice doit être écrit **sur une [feuille modèle de sujet](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_sujet.pdf)**. Si nécessaire vous pouvez utiliser une feuille avec des lignes derrière la page blanche pour pouvoir écrire droit. Pour plus d'information (y compris si vous ne pouvez pas imprimer) voir la page des [modèles](https://ktzanev.github.io/m67lille/exam/templates).
 
-La correction doit être écrite sur une ou plusieurs [feuilles modèles de correction](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_correction.pdf).
+**La correction** doit être écrite **sur une ou plusieurs [feuilles modèles de correction](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_correction.pdf)**.
 
 L'énoncé, à la différence de la solution, ne doit pas prendre plus d'une page.
 
-L'exercice doit comporter entre deux et quatre questions. Au moins la moitié des questions doivent être dans le thème imposé. Ainsi par exemple si le thème imposé est « construction à la règle et au compas », vous pouvez avoir une première question qui déterminer l'existence et l'unicité d'un point (donc pas dans le thème) et une deuxième question qui demande la construction de ce même point à partir des points donnés.
+L'exercice doit comporter entre deux et quatre questions notés `a)`, `b)`, `c)`, `d)`. Au moins la moitié des questions doivent être dans le thème imposé. Ainsi par exemple si le thème imposé est « construction à la règle et au compas », vous pouvez avoir une première question qui déterminer l'existence et l'unicité d'un point (donc pas dans le thème) et une deuxième question qui demande la construction de ce même point à partir des points donnés.
 
 Cet exercice sera noté par la suite sur la base de plusieurs critères :
 - **La lisibilité.** Il est primordial de vous appliquer pour écrire le plus lisiblement possible et pour produire un fichier `pdf` de bonne qualité. Attention, ce n'est pas la « beauté » de votre écriture qui compte, mais la lisibilité, la facilité de lire ce que vous avez écrit. Une écriture trop petite par exemple peut poser des problèmes à la lecture.
@@ -51,9 +51,13 @@ Cet exercice sera noté par la suite sur la base de plusieurs critères :
 
 - De préférence utilisez un logiciel de scan en pdf (tels doXisafe ou Genious Scan).
 - Si vous décidez de prendre des photos, puis de les assembler en PDF il est impératif de les compresser au préalable (par exemple avec [squoosh.app](https://squoosh.app/)).
-- Pour plus d'information sur le processus de scan consultez la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/).
+- Pour plus d'information sur le processus de scan consultez la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/) et/ou voir la [vidéo qui montre comment scanner](https://youtu.be/buC1FzO00pc) vos copies avec [doXisafe](https://play.google.com/store/apps/details?id=de.cib.doxisafe.android) :
+
+[![Regarder la vidéo](https://i.imgur.com/NWJOPw8.png)](https://youtu.be/buC1FzO00pc)
 
 ## Dépôt des documents
+
+**Il faut déposer deux documents pdf dans deux devoirs différents :**
 
 - L'exercice (1 fichier `pdf` d'une page) devra être déposé dans le devoir [Phase 1 : énoncé](https://moodle.univ-lille.fr/course/view.php?id=10662).
 - La correction (1 fichier `pdf` de une à quatre pages) devra être déposée dans un autre devoir [Phase 1 : correction](https://moodle.univ-lille.fr/course/view.php?id=10662).
