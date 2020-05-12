@@ -1,7 +1,7 @@
 # Examen : phase 1 [ 18-22 mai ]
 
-Dans cette phase vous devez choisir/créer/modifier un exercice, ainsi
-que sa solution.
+Dans cette phase vous devez choisir/créer/modifier un exercice, **ainsi que sa solution**.
+
 - Trois thèmes ont été retenus pour l'ensemble des étudiants. Le thème de votre exercice est imposé en fonction de **la première lettre de votre nom de famille** comme suit :
     - **[entre A et D]** « construction à la règle et au compas » ;
     - **[entre E et M]** « angles et longueurs »;
@@ -26,7 +26,7 @@ L'énoncé, à la différence de la solution, ne doit pas prendre plus d'une pag
 L'exercice doit comporter entre deux et quatre questions. Au moins la moitié des questions doivent être dans le thème imposé. Ainsi par exemple si le thème imposé est « construction à la règle et au compas », vous pouvez avoir une première question qui déterminer l'existence et l'unicité d'un point (donc pas dans le thème) et une deuxième question qui demande la construction de ce même point à partir des points donnés.
 
 Cet exercice sera noté par la suite sur la base de plusieurs critères :
-- **La lisibilité.** Il est primordial de vous appliquer pour écrire le plus lisiblement possible et pour produire un fichier `pdf` de bonne qualité. Attention, ce n'est pas la « beauté » de votre écriture qui compte, mais la lisibilité, la facilité de lire ce que vous avez écrit. Une écriture trop petite par exemple peu poser des problèmes à la lecture.
+- **La lisibilité.** Il est primordial de vous appliquer pour écrire le plus lisiblement possible et pour produire un fichier `pdf` de bonne qualité. Attention, ce n'est pas la « beauté » de votre écriture qui compte, mais la lisibilité, la facilité de lire ce que vous avez écrit. Une écriture trop petite par exemple peut poser des problèmes à la lecture.
 - **La clarté de l'énoncé.** Il est primordial que l'énoncé soit vrai, ne comporte pas des contradictions, ni des notations ambiguës. Toutes les notations doivent être introduites. On vous conseille fortement de ne pas « inventer », mais d'adapter un exercice existant.
 - **La faisabilité.** L'exercice doit être faisable (rédaction y compris) en 40-55 minutes.
 
@@ -38,20 +38,20 @@ Cet exercice sera noté par la suite sur la base de plusieurs critères :
 - L'énoncé de l'exercice doit être écrit sur une [feuille modèle de sujet](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_sujet.pdf).
 - La correction doit être écrite sur une ou plusieurs [feuilles modèles de correction](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_correction.pdf).
 - Il faut compléter le cadre (en haut à gauche) et de poser votre carte d'étudiant (ou autre pièce d'identité) à l'endroit prévu (en haut à droite) lors du scan de **chaque page**.
-- Les pages de la correction doivent être numérotés dans le cadre prévu à cet effet.
+- Les pages de la correction doivent être numérotées dans le cadre prévu à cet effet.
 - Vos documents ne doivent pas excéder 500 Ko/page, et de préférence ils doivent être à moins de 200 Ko/page.
 
 ### Conseils
 
 - Le plus important est que vos copies soient lisibles :
-    - éviter les ombres et les éclairages non uniformes ;
-    - veiller à ce que les bords de la page soit parallèles aux bords de la photo ;
+    - évitez les ombres et les éclairages non uniformes ;
+    - veillez à ce que les bords de la page soient parallèles aux bords de la photo ;
     - écrivez avec un stylo foncé (si possible effaçable) ou avec un crayon souple (2B) ;
-    - faite des figures d'une taille raisonnable, ni trop petit (illisible) ni trop grands (perte de place).
+    - faites des figures d'une taille raisonnable, ni trop petites (illisible) ni trop grandes (perte de place).
 
-- De préférence utiliser un logiciel de scan en pdf (tels doXisafe ou Genious Scan).
-- Si vous décider de prendre des photos, puis de les assembler en PDF il est impératif de les compresser au préalable (par exemple avec [squoosh.app](https://squoosh.app/)).
-- Pour plus d'information sur le processus de scan consulter la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/).
+- De préférence utilisez un logiciel de scan en pdf (tels doXisafe ou Genious Scan).
+- Si vous décidez de prendre des photos, puis de les assembler en PDF il est impératif de les compresser au préalable (par exemple avec [squoosh.app](https://squoosh.app/)).
+- Pour plus d'information sur le processus de scan consultez la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/).
 
 ## Dépôt des documents
 
