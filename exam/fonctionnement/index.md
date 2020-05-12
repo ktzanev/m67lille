@@ -41,7 +41,7 @@ L'étudiant attribuera également une note à l'exercice (clarté des consignes,
 
 ### Durée
 
-3 jours *(du lundi au mercredi la semaine après la phase 1)*.
+3 jours *(du mercredi au vendredi la semaine après la phase 1)*.
 
 ### Notes
 
@@ -75,7 +75,7 @@ Il évaluera, comma dans la phase 2, également le sujet de l'exercice.
 
 #### Durée
 
-3 jours *(probablement du jeudi au samedi, après la phase 2)*.
+4 jours *(du lundi au jeudi, la semaine après la phase 2)*.
 
 #### Notes
 
