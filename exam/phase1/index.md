@@ -34,17 +34,20 @@ Cet exercice sera noté par la suite sur la base de plusieurs critères :
 
 ### Règles
 
-- L'anonymisation des copies se fait par un script qui « coupe » le haut des pages (8 cm du haut). Donc il est primordial que vos copies soit rédigées sur [les pages modèles](https://ktzanev.github.io/m67lille/exam/templates/).
+- L'anonymisation des copies se fait par un script qui « coupe » le haut des pages (8 cm du haut). Donc **il est primordial que toutes les pages de vos copies soient rédigées sur [les pages modèles](https://ktzanev.github.io/m67lille/exam/templates/)**.
 - L'énoncé de l'exercice doit être écrit sur une [feuille modèle de sujet](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_sujet.pdf).
 - La correction doit être écrite sur une ou plusieurs [feuilles modèles de correction](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_correction.pdf).
 - Il faut compléter le cadre (en haut à gauche) et de poser votre carte d'étudiant (ou autre pièce d'identité) à l'endroit prévu (en haut à droite) lors du scan de **chaque page**.
-- Les pages de la correction doivent être numérotées dans le cadre prévu à cet effet.
-- Vos documents ne doivent pas excéder 500 Ko/page, et de préférence ils doivent être à moins de 200 Ko/page.
+- Les pages de la correction doivent être **numérotées** dans le cadre prévu à cet effet, et ils doivent apparaître.
+- Les pages pdf doivent contenir la feuille A4 au plus près possible : la table ne doit pas être visible, mais il ne faut pas trop les « raboter » non plus.
+- Vos documents ne doivent **pas excéder 500 Ko/page**, et de préférence ils doivent être à moins de 200 Ko/page.
+
+**Attention: Il ne faut pas sacrifier la lisibilité pour obtenir des fichiers de petite taille !**
 
 ### Conseils
 
 - Le plus important est que vos copies soient lisibles :
-    - évitez les ombres et les éclairages non uniformes ;
+    - **évitez les ombres** et les éclairages non uniformes ;
     - veillez à ce que les bords de la page soient parallèles aux bords de la photo ;
     - écrivez avec un stylo foncé (si possible effaçable) ou avec un crayon souple (2B) ;
     - faites des figures d'une taille raisonnable, ni trop petites (illisible) ni trop grandes (perte de place).
