@@ -2,10 +2,10 @@
 
 Dans cette phase vous devez choisir/créer/modifier un exercice, **ainsi que sa solution**.
 
-- Trois thèmes ont été retenus pour l'ensemble des étudiants. Le thème de votre exercice est imposé en fonction de **la première lettre de votre nom de famille** comme suit :
-    - **[entre A et D]** « construction à la règle et au compas » ;
-    - **[entre E et M]** « angles et longueurs »;
-    - **[entre N et Z]** « aires ».
+- Trois thèmes ont été retenus pour l'ensemble des étudiants. Le thème de votre exercice est imposé en fonction du **début de votre nom de famille** comme suit :
+    - **[entre AAA et DID]** « construction à la règle et au compas » ;
+    - **[entre DIE et LEB]** « angles et longueurs »;
+    - **[entre LEC et ZZZ]** « aires ».
 - L'exercice doit être **faisable en 1h** et comporter **entre 2 et 4 questions**. Les questions doivent être notées **`a)`**, **`b)`**, **`c)`**, **`d)`** *(et pas 1,2,3,4)*.
 - L'exercice ne doit être ni trop facile (faisable en moins de 30 minutes), ni trop difficile (nécessitant plus d'une heure).
 - L'exercice peut-être proche d'un des exercices de tds ou des exercices donnés dans les examens des années précédentes.
