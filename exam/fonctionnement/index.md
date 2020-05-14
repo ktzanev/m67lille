@@ -1,4 +1,4 @@
-# Examen : principe
+# [Examen](../) : principe
 
 L'examen se déroulera sur deux semaines. Il comportera trois phases.
 

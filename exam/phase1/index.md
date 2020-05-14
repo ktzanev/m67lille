@@ -1,4 +1,4 @@
-# Examen : phase 1 [ 18-22 mai ]
+# [Examen](../index.md) : phase 1 [ 18-22 mai ]
 
 Dans cette phase vous devez choisir/créer/modifier un exercice, **ainsi que sa solution**.
 

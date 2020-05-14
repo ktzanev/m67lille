@@ -1,4 +1,4 @@
-# Modèles
+# Modèles pour l'[examen M67](../)
 
 Lors des phases 1 et 2, les productions doivent être écrites à la main sur des pages modèles. Ces pages modèles peuvent être téléchargées et imprimées à partir de cette page.
 

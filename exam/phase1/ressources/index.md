@@ -1,4 +1,4 @@
-# Idées de ressources
+# Idées de ressources pour la [phase 1](../index.md)
 
 - [Les fiches des exercices du cours](https://ktzanev.github.io/m67lille/) ainsi que les contrôles et DS des années précédentes.
 - Les manuels de lycée et collège :
