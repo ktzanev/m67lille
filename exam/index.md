@@ -6,7 +6,7 @@ Sur cette page vous allez trouver des informations sur le déroulement des épre
 
 Le principe général est décrit dans la page [fonctionnement](fonctionnement/).
 
-Lors de l'examen vous allez devoir écrire à la main sur des [pages modèles](templates/). Ces productions devront être [« scannées »](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/) et soumises dans des devoirs Moodle.
+Lors de l'examen vous allez devoir écrire à la main sur des [pages modèles](templates/). Ces productions devront être « scannées » [par téléphone](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/) ou sur [ordinateur](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-05-13-kroum-jpg2pdf-pc/), et soumises dans des devoirs Moodle.
 
 Il y aura un devoir Moodle par document à soumettre.
 

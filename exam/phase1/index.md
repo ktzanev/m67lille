@@ -55,9 +55,11 @@ Cet exercice sera noté par la suite sur la base de plusieurs critères :
 
 - De préférence utilisez un logiciel de scan en pdf (tels doXisafe ou Genious Scan).
 - Si vous décidez de prendre des photos, puis de les assembler en PDF il est impératif de les compresser au préalable (par exemple avec [squoosh.app](https://squoosh.app/)).
-- Pour plus d'information sur le processus de scan consultez la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/) et/ou voir la [vidéo qui montre comment scanner](https://youtu.be/buC1FzO00pc) vos copies avec [doXisafe](https://play.google.com/store/apps/details?id=de.cib.doxisafe.android) :
+- Pour plus d'information sur le processus de scan avec téléphone consultez la [page dédiée](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-04-17-kroum-scan/) et/ou voir la [vidéo qui montre comment scanner](https://youtu.be/buC1FzO00pc) vos copies avec [doXisafe](https://play.google.com/store/apps/details?id=de.cib.doxisafe.android) :
 
 [![Regarder la vidéo](https://i.imgur.com/NWJOPw8.png)](https://youtu.be/buC1FzO00pc)
+
+- Si vous utilisez un pc pour produire vos pdf, vous pouvez consulter ce [tutoriel](https://labopp-info.pages.math.cnrs.fr/e-learning/post/2020-05-13-kroum-jpg2pdf-pc/).
 
 ## Dépôt des documents
 
