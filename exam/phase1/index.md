@@ -38,9 +38,9 @@ Cet exercice sera noté par la suite sur la base de plusieurs critères :
 - L'énoncé de l'exercice doit être écrit sur une [feuille modèle de sujet](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_sujet.pdf).
 - La correction doit être écrite sur une ou plusieurs [feuilles modèles de correction](https://ktzanev.github.io/m67lille/exam/templates/M67_Exam_phase1_correction.pdf).
 - Il faut compléter le cadre (en haut à gauche) et de poser votre carte d'étudiant (ou autre pièce d'identité) à l'endroit prévu (en haut à droite) lors du scan de **chaque page**.
-- Les pages de la correction doivent être **numérotées** dans le cadre prévu à cet effet, et ils doivent apparaître.
+- Les pages de la correction doivent être **numérotées** dans le cadre prévu à cet effet, et elles doivent être mises dans l'ordre dans le `pdf`.
 - Les pages `pdf` doivent représenter que l'**intérieur de la feuille A4** et être recadrées **au plus près du bord** possible. Ceci concerne particulièrement les étudiants qui prennent en photo leurs copies et qui doivent recadrer à posteriori les pages afin que le support (table, sol...) ne soit pas visible.
-- Vos documents ne doivent **pas excéder 500 Ko/page**, et de préférence ils doivent être à moins de 200 Ko/page.
+- Vos documents ne doivent **pas excéder 500 Ko/page**, et de préférence ils doivent être à moins de 200 Ko/page. Mais il ne faut pas essayer d'avoir des documents « sur-compressés » non plus.
 - Le nom du document n'a pas d'impotence.
 
 **Attention: Il ne faut pas sacrifier la lisibilité pour obtenir des fichiers de petite taille !**
