@@ -59,5 +59,6 @@ Les sujets seront évalués sur trois critères *(note de 0 à 5)* :
   - 3 : une partie des questions ou des notations n'est pas claire, mais on peut deviner et faire l'exercice avec quelques doutes
   - 4 : notations dédoublées ou incohérentes, mais sans ambiguïté
   - 5 : sujet parfaitement clair
-- **Temps nécessaire** pour cet exercice [min] : le temps que vous estimez qu'il est nécessaire pour faire cet exercice, **rédaction y compris**, par un étudiant bien préparé. C'est bien de vous chronométrer pour avoir une idée précise du temps que vous avez mis à faire l'exercice, même si ce n'est pas forcément la même chose.
+- **Temps nécessaire** pour cet exercice [min] : le temps que vous estimez nécessaire pour faire cet exercice, **rédaction y compris**, par un étudiant bien préparé. C'est bien de vous chronométrer pour avoir une idée précise du temps que vous avez mis à faire l'exercice, même si ce n'est pas forcément la même chose.
 
+**[⮜⮜ Phase 1](../phase1)**

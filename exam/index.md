@@ -12,8 +12,8 @@ Il y aura un devoir Moodle par document à soumettre.
 
 Les instructions pour différentes phases :
 
-- **[Phase 1](phase1/)**
-- Phase 2 (à venir)
+- **[Phase 1](phase1)**
+- **[Phase 2](phase2)**
 - Phase 3 (à venir)
 
 ---
