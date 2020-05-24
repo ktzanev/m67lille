@@ -32,13 +32,13 @@ _(Attention: ce n'est pas le même modèle qu'à la phase 1.)_
 
 Pour recevoir l'exercice suivant sans traiter l'exercice courant il suffit de rendre une solution avec :
 
-- partie haute remplir correctement (numéro d'exercice, carte d'étudiant …),
+- partie haute remplie correctement (numéro d'exercice, carte d'étudiant …),
 - la partie principale doit comporter écrit en grand au milieu **la mention « Passe »**, ou « Je passe », et rien d'autre.
 
 Ceci aura pour conséquences :
 
 - cette solution sera notée `0` sans correction de la part de vos collèges,
-- le travail sera considéré rendu et une nouvelle exercice vous sera envoyée lors du prochain envoi,
+- le travail sera considéré rendu et un nouvel exercice vous sera envoyé lors du prochain envoi,
 - ceci ne vous engage pas à trois corrections supplémentaires dans la phase 3.
 
 ### Numérisation et dépôt des solutions
