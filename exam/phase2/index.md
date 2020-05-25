@@ -1,11 +1,11 @@
 ## [Examen](../index.md) : phase 2 [ 27-29 mai ]
 
-Dans cette phase les étudiants résolvent les exercices élaborés par leurs collègues dans la première phase.
+Dans cette phase les étudiants résolvent les exercices et évaluent les sujets élaborés par leurs collègues dans la première phase.
 **Ne peuvent participer à cette phase que les étudiants ayant participé à la phase 1.**
 
 - Les étudiants qui ont participé à la première phase recevront (par mail à leur adresse `@univ-lille.fr`) entre 1 et 9 exercices à résoudre.
 - L'envoi des exercices se fait trois fois par jour (9h – 13h – 17h) pendant la durée de la phase 2 _(27, 28 et 29 mai)_.
-- Pour obtenir un nouvel exercice, la solution élaborée par l'étudiant devra être rendue une heure avant l'envoi suivant (8h – 12h – 16h). Si la solution est rendue à temps (même vide) un nouvel exercice sera renvoyé à l'étudiant. Dans le cas contraire l'étudiant pourra soumettre la solution plus tard pour recevoir un nouvel exercice lors des prochains envois.
+- Pour obtenir un nouvel exercice, la solution élaborée par l'étudiant et l'évaluation du sujet devraient être rendues une heure avant l'envoi suivant (8h – 12h – 16h). Si la solution est rendue à temps (même vide) accompagnée de l'évaluation du sujet, un nouvel exercice sera renvoyé à l'étudiant. Dans le cas contraire l'étudiant pourra soumettre la solution plus tard pour recevoir un nouvel exercice lors des prochains envois.
 - Vous allez avoir (au moins) 3h par exercice alors que normalement les exercices doivent être faisables en 1h. Ce qui permet :
   - de ne pas avoir une grande pression temporelle ;
   - de ne pas avoir un traitement différent pour les tiers-temps ;
@@ -32,6 +32,7 @@ _(Attention: ce n'est pas le même modèle qu'à la phase 1.)_
 
 Pour recevoir l'exercice suivant sans traiter l'exercice courant il suffit de rendre une solution avec :
 
+- **évaluation du sujet** _(cette partie est obligatoire pour valider une solution)_,
 - partie haute remplie correctement (numéro d'exercice, carte d'étudiant …),
 - la partie principale doit comporter écrit en grand au milieu **la mention « Passe »**, ou « Je passe », et rien d'autre.
 
@@ -43,7 +44,7 @@ Ceci aura pour conséquences :
 
 ### Numérisation et dépôt des solutions
 
-- Pour obtenir un nouvel exercice, la solution élaborée par l'étudiant devra être rendue une heure avant l'envoi suivant (8h – 12h – 16h). Si la solution est rendue à temps (même vide) un nouvel exercice sera renvoyé à l'étudiant. Dans le cas contraire l'étudiant pourra soumettre la solution plus tard pour recevoir un nouvel exercice lors des prochains envois.
+- Pour obtenir un nouvel exercice, la solution élaborée par l'étudiant et l'évaluation du sujet devraient être rendues une heure avant l'envoi suivant (8h – 12h – 16h). Si elles sont rendues à temps _(même avec un pdf « Passe »)_ un nouvel exercice sera renvoyé à l'étudiant. Dans le cas contraire l'étudiant pourra soumettre la solution et l'évaluation plus tard pour recevoir un nouvel exercice lors des prochains envois.
 - Il faut compléter le cadre (en haut à gauche) avec le numéro de l'exercice _(qui est le nom du fichier contenant l'énoncé)_ et poser votre carte d'étudiant (ou autre pièce d'identité) à l'endroit prévu (en haut à droite) lors du scan de **chaque page**.
 - Les pages numérisées doivent avoir un **aspect très proche du modèle (marges 2 cm de chaque côté)** car la découpe pour l'anonymisation se fait automatiquement par un script.
 - Vos documents ne doivent **pas excéder 500 Ko/page**, et de préférence ils doivent être à moins de 200 Ko/page. Mais il ne faut pas essayer d'avoir des documents « sur-compressés » non plus.
@@ -55,7 +56,7 @@ Le fichier `pdf` devra être déposé dans [le devoir correspondant sur Moodle](
 
 ## Les évaluations de sujets
 
-En même temps que vous déposez votre fichier `pdf` il va falloir écrire dans un cadre _(comme lors de la phase test)_ l'évaluation du sujet que vous avez reçu.
+En même temps que vous déposez votre fichier `pdf` il va falloir écrire dans un cadre _(comme lors de la phase test)_ l'évaluation du sujet que vous avez reçu. Si vous rendez une solution **sans évaluation du sujet**, votre envoie **ne sera pas validée** et vous n'allez pas recevoir un nouvel exercice.
 
 Les sujets seront évalués sur trois critères *(note de 0 à 5)* :
 
@@ -73,6 +74,6 @@ Les sujets seront évalués sur trois critères *(note de 0 à 5)* :
   - 3 : une partie des questions ou des notations n'est pas claire, mais on peut deviner et faire l'exercice avec quelques doutes
   - 4 : notations dédoublées ou incohérentes, mais sans ambiguïté
   - 5 : sujet parfaitement clair
-- **Temps nécessaire** pour cet exercice [min] : le temps que vous estimez nécessaire pour faire cet exercice, **rédaction y compris**, par un étudiant bien préparé. C'est bien de vous chronométrer pour avoir une idée précise du temps que vous avez mis à faire l'exercice, même si ce n'est pas forcément la même chose.
+- **Temps nécessaire** pour cet exercice [min] : le temps que vous estimez nécessaire pour faire cet exercice, **rédaction y compris**, par un étudiant bien préparé. C'est bien de vous chronométrer pour avoir une idée précise du temps que vous avez mis à faire l'exercice, même si ce n'est pas forcément la même chose. **Si vous ne pouvez pas estimer le temps (par exemple si vous « passez » l'exercice) vous pouvez mettre `0`.**
 
 **[⮜⮜ Phase 1](../phase1)**
