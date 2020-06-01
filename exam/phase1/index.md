@@ -93,4 +93,4 @@ Pour participer à cette évaluation les étudiants auront besoin de :
 Il ne sera pas nécessaire, mais il est souhaitable, d'avoir accès à une imprimante pour pouvoir imprimer des modèles sur lesquelles écrire. Ces impressions pourront être faites en avance.
 - Il est fortement recommandé d'imprimer (ou de dessiner vous-même) le nombre de pages modèles nécessaires en avance. Nous vous conseillons : 2 modèles pour le sujet, 3 – 5 modèles pour la correction.
 
-**[Phase 2 ⮞⮞](../phase2)**
+|  **[Phase 2 ⮞⮞](../phase2)**  |

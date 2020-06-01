@@ -111,4 +111,4 @@ Une évaluation est valide si :
 La validation de l'évaluation se fait par un script qui en particulier vérifie la conformité via une [expression régulière](https://regex101.com/r/Jk1zXj/2/), mais aussi vérifie que le code de l'exercice correspond bien au code du dernier exercice que vous avez reçu.
 
 
-**[⮜⮜ Phase 1](../phase1)**
+|  **[⮜⮜ Phase 1](../phase1)**  |  **[Phase 3 ⮞⮞](../phase3)**  |

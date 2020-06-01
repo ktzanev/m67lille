@@ -14,7 +14,7 @@ Les instructions pour différentes phases :
 
 - **[Phase 1](phase1)**
 - **[Phase 2](phase2)**
-- Phase 3 (à venir)
+- **[Phase 3](phase3)**
 
 ---
 
