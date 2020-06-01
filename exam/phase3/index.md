@@ -83,7 +83,7 @@ Toute ligne qui débute par un code (de sujet ou de solution) mais qui n'est pas
 
 ## Validation du fichier avec les évaluations
 
-Avant de soumettre votre fichier vous devez vérifier sa conformité à une adresse qui sera donnée ici _(une fois la page web disponible)_.
+Avant de soumettre votre fichier sur Moodle vous devez vérifier sa conformité sur [la page de validation](validation/).
 
 Si votre fichier ne comporte pas les évaluations de **toutes les solutions** et de **tous les sujets demandés**, il **ne sera pas validé** au final, même s'il passe le test de conformité.
 

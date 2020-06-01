@@ -1,0 +1,48 @@
+/* */
+textarea {
+  height: 70vh !important;
+  width: 100% !important;
+  margin-bottom : 1rem;
+
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: .4rem;
+  margin-bottom: .3rem;
+}
+
+.ok {
+    background-color: #efe;
+}
+
+.oups {
+    background-color: #fee;
+}
+
+.ok, .oups {
+  margin: 4px;
+  padding: 3px;
+}
+
+.code {
+  font-weight: bold;
+}
+
+code > pre {
+  font-size : .7rem;
+  padding: .7rem;
+  background-color: #f7f7f7;
+}
+
+div > pre {
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+}
+div.oups > pre {
+  color : red;
+}
+
+.alert{
+  margin : 1rem;
+}

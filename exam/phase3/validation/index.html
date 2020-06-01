@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
   <title>M67 - phase 3 - validation</title>
 </head>
 <body>
-  <div id="app">
-    {{ message }} C'est ici que vous pouvez vérifier la conformité de votre fichier texte avant de le soumettre dans le devoir sur Moodle.
+  <div id="app" class="container">
+    <div class="breadcrumb">
+      <h1>Validation du texte avec les évaluations de la phase 3</h1>
+    </div>
+    <div class="row">
+      <!-- ================ TEXTE ================ -->
+      <div class="col-md-5">
+        <div class="input-group mb-3">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" @change="onDrop">
+            <label class="custom-file-label" for="inputGroupFile01">Choisir le fichier à valider</label>
+          </div>
+        </div>
+        <textarea v-model="document_txt" class="form-control form-control-sm"
+placeholder="
+Vous pouvez glisser le fichier ici,
+ou copier/coller son contenu ... pour validation.
+"
+        @dragover.prevent @drop.stop.prevent="onDrop"></textarea>
+        <button v-if="filename" @click="DownloadTextFile" class="btn" v-bind:class="{ 'btn-success' : valide, 'btn-danger' : !valide }">Télécharger « {{filename}} »</button>
+      </div>
+      <!-- ================ RESULTATS ================ -->
+      <div class="col-md-7">
+        <div class="alert alert-success" role="alert" v-if='valide' >
+          Votre texte est conforme au format demandé :)
+        </div>
+        <div class="alert alert-danger" role="alert" v-if='!valide' >
+          Votre texte n'est pas conforme au format demandé :(
+        </div>
+        <!-- ------- Solution ok ------- -->
+        <div v-if=solutions.length>
+          <h2 >Solutions conformes <small class="badge badge-success">{{ solutions.length }}</small></h2>
+          <div v-for="s in solutions" class="ok">
+            <span class="code">{{s.code_solution}}</span> (solution de {{s.code_exo}})&nbsp;:&nbsp;
+            <span v-for="n in s.notes">{{n}}&nbsp;</span>
+          </div>
+        </div>
+        <!-- ------- Solution oups ------- -->
+        <div v-if=erreurs_solutions.length>
+          <h2>Solutions non valides <small class="badge badge-danger">{{ erreurs_solutions.length }}</small></h2>
+          <div v-for="s in erreurs_solutions" class="oups">
+            <div v-if="s.type == 'code'">
+              L'exercice <span class="code">{{s.code_exo}}</span> ne semble pas exister !
+            </div>
+            <div v-if="s.type == 'questions'">
+              L'exercice <span class="code">{{s.code_exo}}</span> n'a pas {{s.evaluations}}, mais {{s.quastions}} questions !
+            </div>
+            <div v-if="s.type == 'regex'">
+              L'évaluation de la solution <span class="code">{{s.code_solution}}</span> n'est pas valide !
+            </div>
+            <pre>{{s.ligne}}</pre>
+          </div>
+        </div>
+        <!-- ------- Solution oups ------- -->
+        <div v-if="!nb_solutions_ok">
+          <h2> Nombre de solutions non divisible par trois</h2>
+          <div class="oups">
+            Le nombre de solutions évaluées doit être divisible par 3.
+          </div>
+        </div>
+        <div v-if="solutions.length==0 && erreurs_solutions.length==0">
+          <h2>Manque des solutions à valider</h2>
+          <div class="oups">
+            Vous n'avez aucune solution évaluée.
+          </div>
+        </div>
+        <!-- ------- Sujets ok ------- -->
+        <div v-if=sujets.length>
+          <h2>Sujets conformes <small class="badge badge-success">{{ sujets.length }}</small></h2>
+          <div v-for="s in sujets" class="ok">
+            <span class="code">{{s.code_exo}}</span>&nbsp;:&nbsp;
+            <span v-for="n in s.notes">{{n}}&nbsp;</span>
+          </div>
+        </div>
+        <!-- ------- Sujets oups ------- -->
+        <div v-if=erreurs_sujets.length>
+          <h2>Sujets non valides <small class="badge badge-danger">{{ erreurs_sujets.length }}</small></h2>
+          <div v-for="s in erreurs_sujets" class="oups">
+            <div v-if="s.type == 'code'">
+              L'exercice <span class="code">{{s.code_exo}}</span> ne semble pas exister !
+            </div>
+            <div v-if="s.type == 'regex'">
+              L'évaluation du sujet <span class="code">{{s.code_exo}}</span> n'est pas valide !
+            </div>
+            <pre>{{s.ligne}}</pre>
+          </div>
+        </div>
+        <div v-if="sujets.length==0 && erreurs_sujets.length==0">
+          <h2>Manque des sujets à valider</h2>
+          <div class="oups">
+            Vous n'avez aucun sujet évalué.
+          </div>
+        </div>
+        <!-- ------- Lignes ignorés ------- -->
+        <div v-if=ignores.length>
+          <h2>Lignes ignorées</h2>
+          <code><pre>{{ignores}}</pre></code>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="nb_questions.js"></script>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 </body>
 </html>
