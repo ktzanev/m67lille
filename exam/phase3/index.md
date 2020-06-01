@@ -28,6 +28,8 @@ Chaque sujet dont l'étudiant évalue une solution sera évalué à son tour aus
 
 Chaque évaluation sera consignée dans le fichier texte à soumettre, un exercice par ligne débutant par le code de l'exercice. Pour plus de précisions voir plus bas [format du fichier avec les évaluations](#évaluations-à-soumettre).
 
+_Erratum : dans le mail envoyé est utilisé le terme **« adaptabilité »** qu'il faut comprendre comme **« conformité »**._
+
 ## Durée
 
 4 jours : du mardi 2 juin au **vendredi 5 juin**.
