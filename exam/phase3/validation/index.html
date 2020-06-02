@@ -10,7 +10,7 @@
   <title>M67 - phase 3 - validation</title>
 </head>
 <body>
-  <div id="app" class="container">
+  <div id="app" class="container" @dragover.prevent @drop.stop.prevent="onDrop">
     <div class="breadcrumb">
       <h1>Validation du texte avec les évaluations de la phase 3</h1>
     </div>
@@ -23,12 +23,9 @@
             <label class="custom-file-label" for="inputGroupFile01">Choisir le fichier à valider</label>
           </div>
         </div>
-        <textarea v-model="document_txt" class="form-control form-control-sm"
-placeholder="
+        <textarea v-model="document_txt" class="form-control form-control-sm" placeholder="
 Vous pouvez glisser le fichier ici,
-ou copier/coller son contenu ... pour validation.
-"
-        @dragover.prevent @drop.stop.prevent="onDrop"></textarea>
+ou copier/coller son contenu ... pour validation."></textarea>
         <button v-if="filename" @click="DownloadTextFile" class="btn" v-bind:class="{ 'btn-success' : valide, 'btn-danger' : !valide }">Télécharger « {{filename}} »</button>
       </div>
       <!-- ================ RESULTATS ================ -->

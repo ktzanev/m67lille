@@ -1,9 +1,14 @@
-/* */
+/*
+  Les ajustements au dessus de Bootstrap
+  pour la page de valiation de la phase 3
+*/
+
+
 textarea {
   height: 70vh !important;
   width: 100% !important;
   margin-bottom : 1rem;
-
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 h2 {
