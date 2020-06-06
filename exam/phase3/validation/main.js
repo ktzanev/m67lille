@@ -4,7 +4,6 @@
 
 
 
-const re_debut_code = /^\s*\d[A-Z]\d(_[A-Z]\d[A-Z])*[\s:]/;
 const re_solution = /^\s*(\d[A-Z]\d_[A-Z]\d[A-Z])[^:]*:\s*((?:\d\s+){1,3}\d)\s*$/;
 const re_debut_solution = /^\s*(\d[A-Z]\d_[A-Z]\d[A-Z])/;
 const re_sujet = /^\s*(\d[A-Z]\d)[^_:]*:\s*([A-D]\s+[A-D])\s*$/;
@@ -22,7 +21,8 @@ var app = new Vue({
     ignores           : '',
     filename          : '',
     valide            : false,
-    nb_solutions_ok   : true
+    nb_solutions_ok   : true,
+    notxt             : false
   },
   watch: {
     document_txt: function (val) {
@@ -136,6 +136,12 @@ var app = new Vue({
         return;
       }
       app.filename = file.name;
+      if (!app.filename.endsWith(".txt")) {
+        app.filename = '';
+        app.notxt = true;
+        setTimeout(() => app.notxt = false, 2100);
+        return
+      }
       // create new reader
       var encoding = "ISO-8859-1"
       var reader = new FileReader();
@@ -156,6 +162,7 @@ var app = new Vue({
     DownloadTextFile(e) {
         const text = app.document_txt
         const filename = app.filename || "Prenom Nom - phase 3 - evaluations.txt"
+
         // window.URL = window.URL || window.webkitURL;
         if (window.Blob) {
           // new style

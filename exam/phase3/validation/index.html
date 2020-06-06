@@ -23,6 +23,9 @@
             <label class="custom-file-label" for="inputGroupFile01">Choisir le fichier à valider</label>
           </div>
         </div>
+        <div class="alert alert-danger" role="alert" v-if="notxt">
+          Erreur : le fichier doit être avec extension <code>.txt</code>.
+        </div>
         <textarea v-model="document_txt" class="form-control form-control-sm" placeholder="
 Vous pouvez glisser le fichier ici,
 ou copier/coller son contenu ... pour validation."></textarea>
